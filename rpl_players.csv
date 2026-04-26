@@ -1,0 +1,450 @@
+shirt_number,player_id,player_name,position,date_of_birth,age,nationality,height_m,foot,joined,contract_end,market_value_eur,player_profile_url,club_id,club_slug
+70,867082,Abakar Gadzhiev,Attacking Midfield,31/12/2003,22,Russia,1.8,left,01/07/2025,30/06/2029,500000.0,https://www.transfermarkt.com/abakar-gadzhiev/profil/spieler/867082,3725,akhmat-grozny
+27,1033039,Akhmed Davlitgereev,Right Midfield,14/02/2005,21,Russia,1.76,left,19/02/2026,30/06/2026,,https://www.transfermarkt.com/akhmed-davlitgereev/profil/spieler/1033039,3725,akhmat-grozny
+9,373374,Brian Mansilla,Left Winger,16/04/1997,29,Argentina,1.78,left,01/07/2025,30/06/2028,1500000.0,https://www.transfermarkt.com/brian-mansilla/profil/spieler/373374,3725,akhmat-grozny
+82,621436,Daniil Khlusevich,Right-Back,26/02/2001,25,"Russia, Ukraine",1.86,right,18/02/2026,30/06/2026,2500000.0,https://www.transfermarkt.com/daniil-khlusevich/profil/spieler/621436,3725,akhmat-grozny
+2,917402,Dzhamalutdin Abdulkadyrov,Centre-Back,23/03/2005,21,Russia,1.95,left,19/02/2026,30/06/2026,1000000.0,https://www.transfermarkt.com/dzhamalutdin-abdulkadyrov/profil/spieler/917402,3725,akhmat-grozny
+17,911400,Egas Cacintura,Attacking Midfield,29/10/1997,28,Angola,1.74,right,01/07/2025,30/06/2028,2000000.0,https://www.transfermarkt.com/egas-cacintura/profil/spieler/911400,3725,akhmat-grozny
+23,704593,Galymzhan Kenzhebek,Left Winger,12/02/2003,23,Kazakhstan,1.77,right,10/01/2026,30/06/2030,600000.0,https://www.transfermarkt.com/galymzhan-kenzhebek/profil/spieler/704593,3725,akhmat-grozny
+77,281552,Georgiy Melkadze,Centre-Forward,04/04/1997,29,"Russia, Georgia",1.83,right,30/01/2025,30/06/2027,1200000.0,https://www.transfermarkt.com/georgiy-melkadze/profil/spieler/281552,3725,akhmat-grozny
+88,58971,Giorgiy Shelia,Goalkeeper,11/12/1988,37,Russia,1.9,left,01/08/2020,30/06/2026,200000.0,https://www.transfermarkt.com/giorgiy-shelia/profil/spieler/58971,3725,akhmat-grozny
+11,253734,Ismael Silva,Central Midfield,01/12/1994,31,Brazil,1.72,right,29/07/2024,30/06/2026,1000000.0,https://www.transfermarkt.com/ismael-silva/profil/spieler/253734,3725,akhmat-grozny
+42,1059814,Kelliano,Defensive Midfield,16/01/2003,23,Angola,1.85,right,05/07/2025,30/06/2029,800000.0,https://www.transfermarkt.com/kelliano/profil/spieler/1059814,3725,akhmat-grozny
+5,486204,Klisman Cake,Centre-Back,02/05/1999,26,Albania,1.85,right,10/01/2026,30/06/2029,900000.0,https://www.transfermarkt.com/klisman-cake/profil/spieler/486204,3725,akhmat-grozny
+7,623553,Lechi Sadulaev,Left Winger,08/01/2000,26,Russia,1.79,left,01/07/2019,30/06/2028,3500000.0,https://www.transfermarkt.com/lechi-sadulaev/profil/spieler/623553,3725,akhmat-grozny
+20,713071,Maksim Samorodov,Right Winger,29/06/2002,23,Kazakhstan,1.8,right,06/08/2024,30/06/2028,2500000.0,https://www.transfermarkt.com/maksim-samorodov/profil/spieler/713071,3725,akhmat-grozny
+81,456814,Maksim Sidorov,Left-Back,18/03/1998,28,Russia,1.78,right,01/07/2025,30/06/2028,900000.0,https://www.transfermarkt.com/maksim-sidorov/profil/spieler/456814,3725,akhmat-grozny
+8,273945,Miroslav Bogosavac,Left-Back,14/10/1996,29,Serbia,1.76,left,03/07/2020,30/06/2027,1000000.0,https://www.transfermarkt.com/miroslav-bogosavac/profil/spieler/273945,3725,akhmat-grozny
+13,457743,Mohamed Konaté,Centre-Forward,12/12/1997,28,"Burkina Faso, Russia",1.91,right,08/07/2025,30/06/2028,1500000.0,https://www.transfermarkt.com/mohamed-konate/profil/spieler/457743,3725,akhmat-grozny
+22,1107993,Mohammadmehdi Zare,Centre-Back,25/01/2003,23,Iran,1.95,right,22/07/2025,30/06/2029,900000.0,https://www.transfermarkt.com/mohammadmehdi-zare/profil/spieler/1107993,3725,akhmat-grozny
+90,829380,Ousmane N'Dong,Centre-Back,20/09/1999,26,Senegal,1.92,right,21/07/2025,30/06/2028,900000.0,https://www.transfermarkt.com/ousmane-ndong/profil/spieler/829380,3725,akhmat-grozny
+37,1178485,Papa Amady Gadio,Central Midfield,19/10/2001,24,Senegal,1.85,right,11/09/2025,30/06/2028,400000.0,https://www.transfermarkt.com/papa-amady-gadio/profil/spieler/1178485,3725,akhmat-grozny
+10,267383,Rifat Zhemaletdinov,Attacking Midfield,20/09/1996,29,Russia,1.84,right,04/09/2025,30/06/2026,1500000.0,https://www.transfermarkt.com/rifat-zhemaletdinov/profil/spieler/267383,3725,akhmat-grozny
+40,51274,Rizvan Utsiev,Right-Back,07/02/1988,38,Russia,1.73,right,01/01/2010,30/06/2026,50000.0,https://www.transfermarkt.com/rizvan-utsiev/profil/spieler/51274,3725,akhmat-grozny
+19,646894,Sergey Pryakhin,Attacking Midfield,16/12/2002,23,Russia,1.75,right,10/01/2026,30/06/2029,1000000.0,https://www.transfermarkt.com/sergey-pryakhin/profil/spieler/646894,3725,akhmat-grozny
+4,810558,Turpal-Ali Ibishev,Centre-Back,18/02/2002,24,Russia,1.88,right,01/07/2022,30/06/2028,1500000.0,https://www.transfermarkt.com/turpal-ali-ibishev/profil/spieler/810558,3725,akhmat-grozny
+1,799095,Vadim Ulyanov,Goalkeeper,07/10/2001,24,Russia,1.87,right,15/01/2025,30/06/2028,750000.0,https://www.transfermarkt.com/vadim-ulyanov/profil/spieler/799095,3725,akhmat-grozny
+80,686862,Valeriy Tsarukyan,Attacking Midfield,12/11/2001,24,Russia,1.7,right,10/02/2026,30/06/2026,300000.0,https://www.transfermarkt.com/valeriy-tsarukyan/profil/spieler/686862,3725,akhmat-grozny
+72,1120351,Yakhya Magomedov,Goalkeeper,06/04/2007,19,Russia,1.92,,,30/06/2027,,https://www.transfermarkt.com/yakhya-magomedov/profil/spieler/1120351,3725,akhmat-grozny
+5,636601,Aleksa Djurasovic,Defensive Midfield,23/12/2002,23,"Serbia, Bosnia-Herzegovina",1.88,left,01/07/2024,30/06/2028,1500000.0,https://www.transfermarkt.com/aleksa-djurasovic/profil/spieler/636601,71985,akron-togliatti
+78,215213,Aleksandr Vasyutin,Goalkeeper,04/03/1995,31,Russia,1.9,right,01/07/2024,30/06/2026,700000.0,https://www.transfermarkt.com/aleksandr-vasyutin/profil/spieler/215213,71985,akron-togliatti
+69,1160366,Arseniy Dmitriev,Right Winger,18/07/2007,18,Russia,1.72,left,01/07/2025,30/06/2027,400000.0,https://www.transfermarkt.com/arseniy-dmitriev/profil/spieler/1160366,71985,akron-togliatti
+22,48067,Artem Dzyuba,Centre-Forward,22/08/1988,37,Russia,1.97,right,12/09/2024,30/06/2026,1200000.0,https://www.transfermarkt.com/artem-dzyuba/profil/spieler/48067,71985,akron-togliatti
+11,820252,Benchimol,Centre-Forward,29/12/2001,24,"Cape Verde, Portugal",1.87,right,22/07/2024,30/06/2028,900000.0,https://www.transfermarkt.com/benchimol/profil/spieler/820252,71985,akron-togliatti
+89,1243089,Denis Popenkov,Left-Back,03/10/2006,19,Russia,1.79,left,01/01/2026,30/06/2027,100000.0,https://www.transfermarkt.com/denis-popenkov/profil/spieler/1243089,71985,akron-togliatti
+71,1037971,Dmitriy Pestryakov,Right Winger,08/12/2006,19,Russia,1.76,right,01/01/2024,30/06/2029,3000000.0,https://www.transfermarkt.com/dmitriy-pestryakov/profil/spieler/1037971,71985,akron-togliatti
+7,430488,Edgar Sevikyan,Right Winger,08/08/2001,24,"Armenia, Russia",1.75,left,10/09/2025,30/06/2026,1800000.0,https://www.transfermarkt.com/edgar-sevikyan/profil/spieler/430488,71985,akron-togliatti
+35,645880,Ifet Djakovac,Central Midfield,05/12/1997,28,"Bosnia-Herzegovina, Serbia",1.8,right,15/01/2025,30/06/2028,2500000.0,https://www.transfermarkt.com/ifet-djakovac/profil/spieler/645880,71985,akron-togliatti
+32,1038622,Ignat Terekhovskiy,Goalkeeper,27/03/2006,20,Russia,1.92,left,01/01/2026,30/06/2028,300000.0,https://www.transfermarkt.com/ignat-terekhovskiy/profil/spieler/1038622,71985,akron-togliatti
+24,274694,Ionuț Nedelcearu,Centre-Back,25/04/1996,30,Romania,1.9,right,07/02/2025,30/06/2027,1500000.0,https://www.transfermarkt.com/ionut-nedelcearu/profil/spieler/274694,71985,akron-togliatti
+80,391905,Khetag Khosonov,Defensive Midfield,18/06/1998,27,Russia,1.85,right,18/07/2025,30/06/2028,1000000.0,https://www.transfermarkt.com/khetag-khosonov/profil/spieler/391905,71985,akron-togliatti
+8,535974,Konstantin Maradishvili,Defensive Midfield,07/02/2000,26,"Russia, Georgia",1.79,right,12/08/2025,30/06/2026,500000.0,https://www.transfermarkt.com/konstantin-maradishvili/profil/spieler/535974,71985,akron-togliatti
+23,375857,Kristijan Bistrovic,Central Midfield,09/04/1998,28,Croatia,1.83,right,06/09/2025,30/06/2028,1800000.0,https://www.transfermarkt.com/kristijan-bistrovic/profil/spieler/375857,71985,akron-togliatti
+10,1385364,Kévin Arévalo,Left Winger,06/06/2006,19,Uruguay,1.7,right,15/01/2026,30/06/2030,500000.0,https://www.transfermarkt.com/kevin-arevalo/profil/spieler/1385364,71985,akron-togliatti
+91,1033394,Maksim Boldyrev,Attacking Midfield,31/03/2004,22,Russia,1.89,right,19/02/2024,30/06/2030,1000000.0,https://www.transfermarkt.com/maksim-boldyrev/profil/spieler/1033394,71985,akron-togliatti
+6,268427,Maksim Kuzmin,Attacking Midfield,01/06/1996,29,Russia,1.8,right,01/07/2024,30/06/2026,900000.0,https://www.transfermarkt.com/maksim-kuzmin/profil/spieler/268427,71985,akron-togliatti
+19,700755,Marat Bokoev,Centre-Back,17/07/2001,24,Russia,1.91,left,11/08/2023,30/06/2029,1000000.0,https://www.transfermarkt.com/marat-bokoev/profil/spieler/700755,71985,akron-togliatti
+81,917457,Nikita Bazilevskiy,Attacking Midfield,05/06/2006,19,Russia,1.83,right,24/07/2025,30/06/2029,300000.0,https://www.transfermarkt.com/nikita-bazilevskiy/profil/spieler/917457,71985,akron-togliatti
+21,598101,Roberto Fernández,Left-Back,12/07/1999,26,Bolivia,1.74,left,01/07/2025,30/06/2028,1500000.0,https://www.transfermarkt.com/roberto-fernandez/profil/spieler/598101,71985,akron-togliatti
+26,396428,Rodrigo Escoval,Centre-Back,08/05/1997,28,Portugal,1.88,right,01/07/2024,30/06/2027,800000.0,https://www.transfermarkt.com/rodrigo-escoval/profil/spieler/396428,71985,akron-togliatti
+15,352599,Stefan Loncar,Defensive Midfield,19/02/1996,30,Montenegro,1.9,both,01/07/2024,30/06/2027,1500000.0,https://www.transfermarkt.com/stefan-loncar/profil/spieler/352599,71985,akron-togliatti
+88,190188,Vitaliy Gudiev,Goalkeeper,22/04/1995,31,Russia,1.92,left,01/07/2025,30/06/2028,1000000.0,https://www.transfermarkt.com/vitaliy-gudiev/profil/spieler/190188,71985,akron-togliatti
+2,908807,Yomar Rocha,Right-Back,21/06/2003,22,Bolivia,1.78,right,11/09/2025,30/06/2029,900000.0,https://www.transfermarkt.com/yomar-rocha/profil/spieler/908807,71985,akron-togliatti
+25,301037,Aleksandr Filin,Centre-Back,25/06/1996,29,"Russia, Ukraine",1.85,left,01/07/2025,30/06/2028,1200000.0,https://www.transfermarkt.com/aleksandr-filin/profil/spieler/301037,2741,baltika-kaliningrad
+8,230536,Andrey Mendel,Defensive Midfield,17/04/1995,31,Russia,1.86,right,08/09/2024,30/06/2027,900000.0,https://www.transfermarkt.com/andrey-mendel/profil/spieler/230536,2741,baltika-kaliningrad
+5,593480,Aymane Mourid,Defensive Midfield,07/05/2000,25,Morocco,1.8,right,01/07/2025,05/06/2029,700000.0,https://www.transfermarkt.com/aymane-mourid/profil/spieler/593480,2741,baltika-kaliningrad
+91,736202,Brayan Gil,Centre-Forward,28/06/2001,24,"El Salvador, Colombia",1.86,right,18/01/2025,31/05/2029,3500000.0,https://www.transfermarkt.com/brayan-gil/profil/spieler/736202,2741,baltika-kaliningrad
+90,693412,Chinonso Offor,Centre-Forward,27/05/2000,25,Nigeria,1.92,right,01/07/2025,30/06/2029,1000000.0,https://www.transfermarkt.com/chinonso-offor/profil/spieler/693412,2741,baltika-kaliningrad
+18,700933,Derik Lacerda,Centre-Forward,27/09/1999,26,Brazil,1.91,left,18/02/2026,30/06/2026,1500000.0,https://www.transfermarkt.com/derik-lacerda/profil/spieler/700933,2741,baltika-kaliningrad
+21,742858,Eduardo Anderson,Centre-Back,31/01/2001,25,Panama,1.91,right,07/02/2026,30/06/2026,350000.0,https://www.transfermarkt.com/eduardo-anderson/profil/spieler/742858,2741,baltika-kaliningrad
+44,577714,Egor Lyubakov,Goalkeeper,28/06/1999,26,Russia,1.96,right,09/07/2024,31/12/2027,400000.0,https://www.transfermarkt.com/egor-lyubakov/profil/spieler/577714,2741,baltika-kaliningrad
+77,317764,Eldar Civic,Left-Back,28/05/1996,29,Bosnia-Herzegovina,1.82,left,01/07/2025,30/06/2028,750000.0,https://www.transfermarkt.com/eldar-civic/profil/spieler/317764,2741,baltika-kaliningrad
+10,297034,Ilya Petrov,Central Midfield,27/06/1995,30,Russia,1.78,left,01/07/2024,30/06/2027,1200000.0,https://www.transfermarkt.com/ilya-petrov/profil/spieler/297034,2741,baltika-kaliningrad
+69,667980,Irakliy Manelov,Right Winger,19/09/2002,23,Russia,1.72,right,19/08/2025,30/06/2028,600000.0,https://www.transfermarkt.com/irakliy-manelov/profil/spieler/667980,2741,baltika-kaliningrad
+26,1247237,Ivan Belikov,Defensive Midfield,25/07/2004,21,"Russia, Ukraine",1.95,,28/07/2025,30/06/2029,800000.0,https://www.transfermarkt.com/ivan-belikov/profil/spieler/1247237,2741,baltika-kaliningrad
+81,692563,Ivan Kukushkin,Goalkeeper,24/07/2002,23,Russia,1.96,left,01/01/2026,30/06/2028,150000.0,https://www.transfermarkt.com/ivan-kukushkin/profil/spieler/692563,2741,baltika-kaliningrad
+16,614898,Kevin Andrade,Centre-Back,16/06/1999,26,Colombia,1.89,right,17/01/2024,30/06/2027,3000000.0,https://www.transfermarkt.com/kevin-andrade/profil/spieler/614898,2741,baltika-kaliningrad
+28,743906,Kirill Nikishin,Centre-Forward,05/02/2004,22,Russia,1.79,right,01/07/2024,31/05/2028,200000.0,https://www.transfermarkt.com/kirill-nikishin/profil/spieler/743906,2741,baltika-kaliningrad
+46,1038342,Kirill Obonin,Centre-Back,05/07/2006,19,Russia,1.92,right,,30/06/2026,150000.0,https://www.transfermarkt.com/kirill-obonin/profil/spieler/1038342,2741,baltika-kaliningrad
+39,1125676,Kirill Stepanov,Centre-Forward,04/08/2006,19,Russia,1.78,right,01/01/2026,30/06/2030,250000.0,https://www.transfermarkt.com/kirill-stepanov/profil/spieler/1125676,2741,baltika-kaliningrad
+67,526448,Maksim Borisko,Goalkeeper,15/02/2000,26,Russia,1.96,right,01/07/2019,10/06/2028,2000000.0,https://www.transfermarkt.com/maksim-borisko/profil/spieler/526448,2741,baltika-kaliningrad
+73,431708,Maksim Petrov,Central Midfield,18/01/2001,25,Russia,1.69,right,17/01/2025,30/06/2030,1800000.0,https://www.transfermarkt.com/maksim-petrov/profil/spieler/431708,2741,baltika-kaliningrad
+68,917404,Mikhail Ryadno,Left-Back,18/09/2005,20,Russia,1.84,left,16/02/2026,31/12/2029,1000000.0,https://www.transfermarkt.com/mikhail-ryadno/profil/spieler/917404,2741,baltika-kaliningrad
+23,360451,Mingiyan Beveev,Right-Back,30/11/1995,30,Russia,1.82,right,01/07/2025,30/06/2027,1500000.0,https://www.transfermarkt.com/mingiyan-beveev/profil/spieler/360451,2741,baltika-kaliningrad
+4,815346,Nathan Gassama,Centre-Back,05/01/2001,25,"Mali, France",1.92,left,06/08/2023,30/06/2028,1500000.0,https://www.transfermarkt.com/nathan-gassama/profil/spieler/815346,2741,baltika-kaliningrad
+22,606526,Nikolay Titkov,Central Midfield,18/08/2000,25,Russia,1.77,right,11/07/2025,30/06/2028,1200000.0,https://www.transfermarkt.com/nikolay-titkov/profil/spieler/606526,2741,baltika-kaliningrad
+2,555159,Sergey Varatynov,Centre-Back,27/06/2003,22,Russia,1.87,right,12/09/2024,30/06/2027,1800000.0,https://www.transfermarkt.com/sergey-varatynov/profil/spieler/555159,2741,baltika-kaliningrad
+14,376127,Stefan Kovac,Central Midfield,14/01/1999,27,"Bosnia-Herzegovina, Serbia",1.85,right,01/07/2025,30/06/2030,1200000.0,https://www.transfermarkt.com/stefan-kovac/profil/spieler/376127,2741,baltika-kaliningrad
+15,620015,Tenton Yenne,Left Winger,07/07/2000,25,Nigeria,1.78,right,01/07/2025,30/06/2028,600000.0,https://www.transfermarkt.com/tenton-yenne/profil/spieler/620015,2741,baltika-kaliningrad
+42,1151887,Vladislav Pospelov,Attacking Midfield,25/09/2006,19,Russia,1.78,right,,30/06/2030,100000.0,https://www.transfermarkt.com/vladislav-pospelov/profil/spieler/1151887,2741,baltika-kaliningrad
+11,203510,Yuriy Kovalev,Right Midfield,27/01/1993,33,Belarus,1.74,right,07/02/2024,30/06/2026,400000.0,https://www.transfermarkt.com/yuriy-kovalev/profil/spieler/203510,2741,baltika-kaliningrad
+52,917403,Artem Bandikyan,Defensive Midfield,20/09/2005,20,"Armenia, Russia",1.77,right,01/01/2025,30/06/2028,750000.0,https://www.transfermarkt.com/artem-bandikyan/profil/spieler/917403,2410,cska-moscou
+88,1052489,Artem Serikov,Right Winger,26/05/2007,18,Russia,1.82,right,,31/12/2027,150000.0,https://www.transfermarkt.com/artem-serikov/profil/spieler/1052489,2410,cska-moscou
+19,650833,Daniel Ruiz,Left Winger,30/07/2001,24,Colombia,1.71,left,15/08/2025,30/06/2026,1200000.0,https://www.transfermarkt.com/daniel-ruiz/profil/spieler/650833,2410,cska-moscou
+3,372535,Danil Krugovoy,Left Midfield,28/05/1998,27,Russia,1.76,left,01/07/2024,30/06/2028,5000000.0,https://www.transfermarkt.com/danil-krugovoy/profil/spieler/372535,2410,cska-moscou
+18,720287,Danila Kozlov,Attacking Midfield,19/01/2005,21,Russia,1.81,right,12/02/2026,30/06/2029,3000000.0,https://www.transfermarkt.com/danila-kozlov/profil/spieler/720287,2410,cska-moscou
+6,263905,Dmitriy Barinov,Defensive Midfield,11/09/1996,29,Russia,1.81,both,13/01/2026,30/06/2029,8000000.0,https://www.transfermarkt.com/dmitriy-barinov/profil/spieler/263905,2410,cska-moscou
+85,864314,Egor Besaev,Goalkeeper,03/01/2006,20,Russia,1.89,right,01/01/2026,30/06/2026,,https://www.transfermarkt.com/egor-besaev/profil/spieler/864314,2410,cska-moscou
+14,703581,Egor Ushakov,Right Winger,02/12/2002,23,Russia,1.77,right,01/01/2022,30/06/2026,100000.0,https://www.transfermarkt.com/egor-ushakov/profil/spieler/703581,2410,cska-moscou
+37,1009031,Henrique Carmo,Right Winger,09/11/2006,19,Brazil,1.73,left,11/09/2025,30/06/2030,3500000.0,https://www.transfermarkt.com/henrique-carmo/profil/spieler/1009031,2410,cska-moscou
+35,15570,Igor Akinfeev,Goalkeeper,08/04/1986,40,Russia,1.87,right,01/01/2003,30/06/2026,1000000.0,https://www.transfermarkt.com/igor-akinfeev/profil/spieler/15570,2410,cska-moscou
+10,419845,Ivan Oblyakov,Central Midfield,05/07/1998,27,Russia,1.76,left,31/08/2018,30/06/2030,10000000.0,https://www.transfermarkt.com/ivan-oblyakov/profil/spieler/419845,2410,cska-moscou
+4,671145,João Victor,Centre-Back,17/07/1998,27,Brazil,1.9,right,20/08/2025,30/06/2029,4000000.0,https://www.transfermarkt.com/joao-victor/profil/spieler/671145,2410,cska-moscou
+79,1131030,Kirill Danilov,Centre-Back,12/08/2007,18,Russia,1.94,left,01/01/2026,31/12/2029,750000.0,https://www.transfermarkt.com/kirill-danilov/profil/spieler/1131030,2410,cska-moscou
+17,865414,Kirill Glebov,Right Winger,10/11/2005,20,Russia,1.74,right,01/07/2023,30/06/2028,10000000.0,https://www.transfermarkt.com/kirill-glebov/profil/spieler/865414,2410,cska-moscou
+9,851111,Luciano Gondou,Centre-Forward,22/06/2001,24,"Argentina, Italy",1.89,left,11/01/2026,30/06/2030,7500000.0,https://www.transfermarkt.com/luciano-gondou/profil/spieler/851111,2410,cska-moscou
+97,1141473,Maksim Voronov,Centre-Forward,18/10/2007,18,Russia,1.86,right,01/01/2026,30/06/2030,2000000.0,https://www.transfermarkt.com/maksim-voronov/profil/spieler/1141473,2410,cska-moscou
+7,1127813,Matheus Alves,Attacking Midfield,05/03/2005,21,Brazil,1.79,right,10/07/2025,30/06/2030,7000000.0,https://www.transfermarkt.com/matheus-alves/profil/spieler/1127813,2410,cska-moscou
+2,379249,Matheus Reis,Left-Back,18/02/1995,31,Brazil,1.83,left,12/02/2026,30/06/2029,3000000.0,https://www.transfermarkt.com/matheus-reis/profil/spieler/379249,2410,cska-moscou
+20,1012421,Matija Popović,Attacking Midfield,08/01/2006,20,"Serbia, Germany",1.93,right,11/09/2025,30/06/2028,1500000.0,https://www.transfermarkt.com/matija-popovic/profil/spieler/1012421,2410,cska-moscou
+31,651580,Matvey Kislyak,Central Midfield,26/07/2005,20,Russia,1.8,right,01/01/2024,30/06/2029,20000000.0,https://www.transfermarkt.com/matvey-kislyak/profil/spieler/651580,2410,cska-moscou
+90,624340,Matvey Lukin,Centre-Back,27/04/2004,21,Russia,1.9,right,01/07/2023,30/06/2027,4000000.0,https://www.transfermarkt.com/matvey-lukin/profil/spieler/624340,2410,cska-moscou
+22,245030,Milan Gajic,Right-Back,28/01/1996,30,Serbia,1.78,both,01/07/2022,30/06/2027,4000000.0,https://www.transfermarkt.com/milan-gajic/profil/spieler/245030,2410,cska-moscou
+27,368468,Moisés,Left-Back,11/03/1995,31,Brazil,1.84,left,01/07/2023,30/06/2029,5000000.0,https://www.transfermarkt.com/moises/profil/spieler/368468,2410,cska-moscou
+99,960578,Nikolay Barovskiy,Goalkeeper,05/09/2006,19,Russia,1.91,right,01/01/2026,30/06/2027,,https://www.transfermarkt.com/nikolay-barovskiy/profil/spieler/960578,2410,cska-moscou
+24,878219,Ramiro Di Luciano,Right-Back,21/01/2004,22,"Argentina, Italy",1.66,right,19/08/2025,30/06/2028,1000000.0,https://www.transfermarkt.com/ramiro-di-luciano/profil/spieler/878219,2410,cska-moscou
+11,654117,Tamerlan Musaev,Centre-Forward,29/07/2001,24,Russia,1.86,right,01/01/2024,30/06/2028,3000000.0,https://www.transfermarkt.com/tamerlan-musaev/profil/spieler/654117,2410,cska-moscou
+49,555146,Vladislav Torop,Goalkeeper,07/11/2003,22,Russia,1.91,left,06/08/2020,30/06/2030,1000000.0,https://www.transfermarkt.com/vladislav-torop/profil/spieler/555146,2410,cska-moscou
+50,687617,Aleksandr Kutitskiy,Defensive Midfield,01/01/2002,24,Russia,1.84,right,01/01/2022,30/06/2029,1500000.0,https://www.transfermarkt.com/aleksandr-kutitskiy/profil/spieler/687617,121,dinamo-moscou
+47,720930,Andrey Kudravets,Goalkeeper,02/09/2003,22,Belarus,1.91,right,18/08/2023,30/06/2028,300000.0,https://www.transfermarkt.com/andrey-kudravets/profil/spieler/720930,121,dinamo-moscou
+99,112541,Andrey Lunev,Goalkeeper,13/11/1991,34,Russia,1.9,right,01/07/2024,30/06/2026,1000000.0,https://www.transfermarkt.com/andrey-lunev/profil/spieler/112541,121,dinamo-moscou
+21,255451,Anton Miranchuk,Attacking Midfield,17/10/1995,30,Russia,1.85,right,22/08/2025,30/06/2027,2500000.0,https://www.transfermarkt.com/anton-miranchuk/profil/spieler/255451,121,dinamo-moscou
+11,401534,Arthur Gomes,Left Winger,03/07/1998,27,Brazil,1.75,right,07/09/2024,30/06/2029,3000000.0,https://www.transfermarkt.com/arthur-gomes/profil/spieler/401534,121,dinamo-moscou
+19,344299,Bakhtiyor Zaynutdinov,Left-Back,02/04/1998,28,Kazakhstan,1.83,left,28/07/2025,30/06/2029,2500000.0,https://www.transfermarkt.com/bakhtiyor-zaynutdinov/profil/spieler/344299,121,dinamo-moscou
+10,703497,Bitello,Attacking Midfield,07/01/2000,26,Brazil,1.79,right,14/09/2023,30/06/2031,14000000.0,https://www.transfermarkt.com/bitello/profil/spieler/703497,121,dinamo-moscou
+74,400713,Daniil Fomin,Defensive Midfield,02/03/1997,29,Russia,1.87,right,03/08/2020,30/06/2029,8000000.0,https://www.transfermarkt.com/daniil-fomin/profil/spieler/400713,121,dinamo-moscou
+15,570423,Danil Glebov,Defensive Midfield,03/11/1999,26,Russia,1.78,right,20/02/2025,31/12/2030,7500000.0,https://www.transfermarkt.com/danil-glebov/profil/spieler/570423,121,dinamo-moscou
+57,985172,David Ricardo,Centre-Back,21/12/2002,23,Brazil,1.89,left,21/01/2026,30/06/2030,7000000.0,https://www.transfermarkt.com/david-ricardo/profil/spieler/985172,121,dinamo-moscou
+30,864621,Dmitriy Aleksandrov,Defensive Midfield,31/07/2006,19,Russia,1.95,right,01/07/2025,31/12/2027,350000.0,https://www.transfermarkt.com/dmitriy-aleksandrov/profil/spieler/864621,121,dinamo-moscou
+7,281917,Dmitriy Skopintsev,Left-Back,02/03/1997,29,Russia,1.77,left,07/01/2020,30/06/2029,2000000.0,https://www.transfermarkt.com/dmitriy-skopintsev/profil/spieler/281917,121,dinamo-moscou
+14,667974,El Mehdi Maouhoub,Centre-Forward,05/06/2003,22,Morocco,1.86,right,23/08/2024,30/06/2029,1200000.0,https://www.transfermarkt.com/el-mehdi-maouhoub/profil/spieler/667974,121,dinamo-moscou
+31,168527,Igor Leshchuk,Goalkeeper,20/02/1996,30,Russia,1.88,left,01/01/2018,30/06/2028,600000.0,https://www.transfermarkt.com/igor-leshchuk/profil/spieler/168527,121,dinamo-moscou
+33,395659,Ivan Sergeev,Centre-Forward,11/05/1995,30,Russia,1.84,right,04/07/2025,30/06/2028,3000000.0,https://www.transfermarkt.com/ivan-sergeev/profil/spieler/395659,121,dinamo-moscou
+4,756494,Juan José Cáceres,Right-Back,01/06/2000,25,"Paraguay, Argentina",1.77,right,19/02/2025,31/12/2029,4000000.0,https://www.transfermarkt.com/juan-jose-caceres/profil/spieler/756494,121,dinamo-moscou
+70,532676,Konstantin Tyukavin,Centre-Forward,22/06/2002,23,Russia,1.8,right,01/01/2021,30/06/2030,15000000.0,https://www.transfermarkt.com/konstantin-tyukavin/profil/spieler/532676,121,dinamo-moscou
+40,918327,Kurban Rasulov,Goalkeeper,05/01/2006,20,Russia,1.92,right,01/07/2025,30/06/2028,1000000.0,https://www.transfermarkt.com/kurban-rasulov/profil/spieler/918327,121,dinamo-moscou
+56,718759,Leon Zaydenzal,Centre-Back,08/07/2004,21,Russia,1.88,right,01/07/2025,30/06/2028,700000.0,https://www.transfermarkt.com/leon-zaydenzal/profil/spieler/718759,121,dinamo-moscou
+24,331059,Luis Chávez,Defensive Midfield,15/01/1996,30,Mexico,1.78,left,25/08/2023,30/06/2027,7000000.0,https://www.transfermarkt.com/luis-chavez/profil/spieler/331059,121,dinamo-moscou
+55,293829,Maksim Osipenko,Centre-Back,16/05/1994,31,Russia,1.9,right,01/07/2025,30/06/2028,3500000.0,https://www.transfermarkt.com/maksim-osipenko/profil/spieler/293829,121,dinamo-moscou
+5,673429,Milan Majstorovic,Centre-Back,21/02/2005,21,Serbia,1.85,right,21/02/2023,30/06/2027,1000000.0,https://www.transfermarkt.com/milan-majstorovic/profil/spieler/673429,121,dinamo-moscou
+13,266768,Nicolas Moumi Ngamaleu,Left Winger,09/07/1994,31,Cameroon,1.81,right,08/09/2022,30/06/2026,2800000.0,https://www.transfermarkt.com/nicolas-moumi-ngamaleu/profil/spieler/266768,121,dinamo-moscou
+2,852980,Nicolás Marichal,Centre-Back,17/03/2001,25,Uruguay,1.85,right,30/08/2022,30/06/2029,5000000.0,https://www.transfermarkt.com/nicolas-marichal/profil/spieler/852980,121,dinamo-moscou
+6,491589,Roberto Fernández,Centre-Back,07/06/2000,25,Paraguay,1.88,left,26/07/2022,30/06/2029,2800000.0,https://www.transfermarkt.com/roberto-fernandez/profil/spieler/491589,121,dinamo-moscou
+44,843397,Rubens,Left-Back,21/06/2001,24,Brazil,1.78,left,31/07/2025,30/06/2030,8000000.0,https://www.transfermarkt.com/rubens/profil/spieler/843397,121,dinamo-moscou
+60,1080107,Timofey Marinkin,Central Midfield,02/06/2008,17,Russia,1.84,left,01/01/2026,31/12/2029,600000.0,https://www.transfermarkt.com/timofey-marinkin/profil/spieler/1080107,121,dinamo-moscou
+17,637540,Ulvi Babaev,Left Winger,30/03/2004,22,"Russia, Azerbaijan",1.72,both,01/07/2025,30/06/2030,750000.0,https://www.transfermarkt.com/ulvi-babaev/profil/spieler/637540,121,dinamo-moscou
+88,939068,Viktor Okishor,Attacking Midfield,30/12/2006,19,"Russia, Moldova",1.85,right,01/07/2025,30/06/2029,500000.0,https://www.transfermarkt.com/viktor-okishor/profil/spieler/939068,121,dinamo-moscou
+91,673114,Yaroslav Gladyshev,Right Winger,05/05/2003,22,Russia,1.81,left,01/07/2022,30/06/2030,4000000.0,https://www.transfermarkt.com/yaroslav-gladyshev/profil/spieler/673114,121,dinamo-moscou
+53,432112,Aleksandr Chernikov,Defensive Midfield,01/02/2000,26,Russia,1.84,right,01/07/2021,30/06/2029,9000000.0,https://www.transfermarkt.com/aleksandr-chernikov/profil/spieler/432112,16704,fk-krasnodar
+96,817843,Aleksandr Koksharov,Centre-Forward,20/12/2004,21,"Russia, Slovenia",1.9,right,01/07/2024,30/06/2027,600000.0,https://www.transfermarkt.com/aleksandr-koksharov/profil/spieler/817843,16704,fk-krasnodar
+16,687463,Aleksandr Koryakin,Goalkeeper,10/03/2002,24,Russia,1.9,left,01/07/2025,30/06/2029,750000.0,https://www.transfermarkt.com/aleksandr-koryakin/profil/spieler/687463,16704,fk-krasnodar
+59,1052493,Artem Khmarin,Left-Back,03/05/2007,18,Russia,1.8,left,01/01/2026,30/06/2028,400000.0,https://www.transfermarkt.com/artem-khmarin/profil/spieler/1052493,16704,fk-krasnodar
+21,489814,Danil Karpov,Centre-Forward,28/06/1999,26,Russia,1.79,right,01/07/2025,30/06/2026,100000.0,https://www.transfermarkt.com/danil-karpov/profil/spieler/489814,16704,fk-krasnodar
+4,546212,Diego Costa,Centre-Back,21/07/1999,26,Brazil,1.84,right,17/07/2024,30/06/2029,10000000.0,https://www.transfermarkt.com/diego-costa/profil/spieler/546212,16704,fk-krasnodar
+66,393621,Douglas Augusto,Central Midfield,13/01/1997,29,Brazil,1.73,left,12/07/2025,30/06/2028,7000000.0,https://www.transfermarkt.com/douglas-augusto/profil/spieler/393621,16704,fk-krasnodar
+10,515744,Eduard Spertsyan,Attacking Midfield,07/06/2000,25,"Armenia, Russia",1.78,right,01/07/2021,30/06/2029,25000000.0,https://www.transfermarkt.com/eduard-spertsyan/profil/spieler/515744,16704,fk-krasnodar
+27,1109231,Efim Burkin,Attacking Midfield,15/04/2008,18,Russia,1.74,,,30/06/2028,300000.0,https://www.transfermarkt.com/efim-burkin/profil/spieler/1109231,16704,fk-krasnodar
+29,1244035,Eldar Guseynov,Left Winger,09/02/2008,18,Russia,1.78,right,,-,300000.0,https://www.transfermarkt.com/eldar-guseynov/profil/spieler/1244035,16704,fk-krasnodar
+20,339699,Giovanni González,Right-Back,20/09/1994,31,"Uruguay, Italy",1.73,right,17/08/2024,30/06/2027,2500000.0,https://www.transfermarkt.com/giovanni-gonzalez/profil/spieler/339699,16704,fk-krasnodar
+-,715339,Grigoriy Lovtsov,Central Midfield,06/01/2005,21,Russia,1.81,right,01/02/2025,30/06/2028,100000.0,https://www.transfermarkt.com/grigoriy-lovtsov/profil/spieler/715339,16704,fk-krasnodar
+9,185245,Jhon Córdoba,Centre-Forward,11/05/1993,32,Colombia,1.88,right,23/07/2021,30/06/2027,10000000.0,https://www.transfermarkt.com/jhon-cordoba/profil/spieler/185245,16704,fk-krasnodar
+11,514256,João Batxi,Right Winger,01/05/1998,27,"Angola, Portugal",1.74,right,07/09/2022,30/06/2029,7000000.0,https://www.transfermarkt.com/joao-batxi/profil/spieler/514256,16704,fk-krasnodar
+23,487421,Juan Manuel Boselli,Second Striker,09/11/1999,26,"Uruguay, Italy",1.75,left,11/02/2026,30/06/2028,1500000.0,https://www.transfermarkt.com/juan-manuel-boselli/profil/spieler/487421,16704,fk-krasnodar
+5,149928,Jubal,Centre-Back,29/08/1993,32,Brazil,1.9,right,01/07/2025,30/06/2027,2000000.0,https://www.transfermarkt.com/jubal/profil/spieler/149928,16704,fk-krasnodar
+67,1160724,Kazbek Mukailov,Centre-Forward,01/06/2007,18,Russia,1.9,right,01/01/2026,30/06/2028,600000.0,https://www.transfermarkt.com/kazbek-mukailov/profil/spieler/1160724,16704,fk-krasnodar
+6,544586,Kevin Lenini,Defensive Midfield,27/01/1997,29,"Cape Verde, Portugal",1.81,both,08/09/2022,30/06/2027,4500000.0,https://www.transfermarkt.com/kevin-lenini/profil/spieler/544586,16704,fk-krasnodar
+15,216240,Lucas Olaza,Left-Back,21/07/1994,31,"Uruguay, Spain",1.73,left,06/08/2023,30/06/2026,4000000.0,https://www.transfermarkt.com/lucas-olaza/profil/spieler/216240,16704,fk-krasnodar
+90,911232,Moses David Cobnan,Right Winger,10/09/2002,23,Nigeria,1.78,left,15/01/2023,30/06/2028,800000.0,https://www.transfermarkt.com/moses-david-cobnan/profil/spieler/911232,16704,fk-krasnodar
+88,746180,Nikita Krivtsov,Attacking Midfield,18/08/2002,23,Russia,1.86,right,14/08/2021,30/06/2029,5000000.0,https://www.transfermarkt.com/nikita-krivtsov/profil/spieler/746180,16704,fk-krasnodar
+-,685982,Roman Safronov,Goalkeeper,15/02/2003,23,Russia,1.92,,01/01/2025,30/06/2028,100000.0,https://www.transfermarkt.com/roman-safronov/profil/spieler/685982,16704,fk-krasnodar
+98,102581,Sergey Petrov,Right-Back,02/01/1991,35,Russia,1.75,right,02/01/2013,30/06/2026,300000.0,https://www.transfermarkt.com/sergey-petrov/profil/spieler/102581,16704,fk-krasnodar
+1,617520,Stanislav Agkatsev,Goalkeeper,09/01/2002,24,Russia,1.89,right,01/01/2022,30/06/2029,10000000.0,https://www.transfermarkt.com/stanislav-agkatsev/profil/spieler/617520,16704,fk-krasnodar
+41,797594,Timur Abdrashitov,Right Winger,19/04/2002,24,Russia,1.76,right,01/02/2025,30/06/2027,150000.0,https://www.transfermarkt.com/timur-abdrashitov/profil/spieler/797594,16704,fk-krasnodar
+17,615650,Valentin Paltsev,Centre-Back,12/07/2001,24,Russia,1.81,right,24/01/2026,30/06/2030,3000000.0,https://www.transfermarkt.com/valentin-paltsev/profil/spieler/615650,16704,fk-krasnodar
+7,381724,Victor Sá,Left Winger,27/03/1994,32,Brazil,1.78,both,22/02/2024,30/06/2026,3000000.0,https://www.transfermarkt.com/victor-sa/profil/spieler/381724,16704,fk-krasnodar
+2,375662,Vitaliy Stezhko,Centre-Back,29/01/1997,29,Russia,1.86,right,01/07/2025,30/06/2028,500000.0,https://www.transfermarkt.com/vitaliy-stezhko/profil/spieler/375662,16704,fk-krasnodar
+3,517300,Vítor Tormena,Centre-Back,04/01/1996,30,Brazil,1.92,right,18/08/2023,30/06/2029,9000000.0,https://www.transfermarkt.com/vitor-tormena/profil/spieler/517300,16704,fk-krasnodar
+21,1156870,Abdulpasha Dzhabrailov,Defensive Midfield,24/11/2004,21,Russia,1.77,right,15/02/2025,30/06/2026,400000.0,https://www.transfermarkt.com/abdulpasha-dzhabrailov/profil/spieler/1156870,75231,fk-makhachkala
+72,649301,Aleksandr Sandrachuk,Right-Back,02/01/2002,24,Russia,1.76,right,01/07/2023,30/06/2026,450000.0,https://www.transfermarkt.com/aleksandr-sandrachuk/profil/spieler/649301,75231,fk-makhachkala
+24,1102540,Andrés Alarcón,Centre-Back,19/05/2001,24,Colombia,1.91,right,11/09/2025,30/06/2026,750000.0,https://www.transfermarkt.com/andres-alarcon/profil/spieler/1102540,75231,fk-makhachkala
+27,451244,David Volk,Goalkeeper,11/04/2001,25,Russia,1.92,right,10/01/2023,30/06/2026,900000.0,https://www.transfermarkt.com/david-volk/profil/spieler/451244,75231,fk-makhachkala
+55,1404902,Diaa Eddine Mechid,Right Winger,11/06/2006,19,Algeria,1.72,left,02/02/2026,30/06/2029,125000.0,https://www.transfermarkt.com/diaa-eddine-mechid/profil/spieler/1404902,75231,fk-makhachkala
+98,1317564,Gadzhi Budunov,Centre-Forward,11/02/2007,19,Russia,1.8,right,01/07/2025,30/06/2027,100000.0,https://www.transfermarkt.com/gadzhi-budunov/profil/spieler/1317564,75231,fk-makhachkala
+25,567023,Gamid Agalarov,Centre-Forward,16/07/2000,25,Russia,1.81,left,21/08/2024,30/06/2027,1200000.0,https://www.transfermarkt.com/gamid-agalarov/profil/spieler/567023,75231,fk-makhachkala
+7,953150,Hazem Mastouri,Centre-Forward,18/06/1997,28,Tunisia,1.91,right,17/08/2025,30/06/2028,700000.0,https://www.transfermarkt.com/hazem-mastouri/profil/spieler/953150,75231,fk-makhachkala
+16,842780,Houssem Mrezigue,Defensive Midfield,23/03/2000,26,Algeria,1.83,right,31/07/2024,30/06/2027,1000000.0,https://www.transfermarkt.com/houssem-mrezigue/profil/spieler/842780,75231,fk-makhachkala
+4,702149,Idar Shumakhov,Centre-Back,05/06/1999,26,Russia,1.85,right,15/07/2022,30/06/2027,1000000.0,https://www.transfermarkt.com/idar-shumakhov/profil/spieler/702149,75231,fk-makhachkala
+43,1317563,Ilyas Akhmedov,Centre-Back,02/04/2007,19,Russia,1.89,right,01/07/2025,30/06/2027,200000.0,https://www.transfermarkt.com/ilyas-akhmedov/profil/spieler/1317563,75231,fk-makhachkala
+71,874950,Jan Dapo,Left-Back,17/09/2002,23,Slovenia,1.85,left,24/07/2024,30/06/2028,600000.0,https://www.transfermarkt.com/jan-dapo/profil/spieler/874950,75231,fk-makhachkala
+5,250907,Jemal Tabidze,Centre-Back,18/03/1996,30,Georgia,1.87,left,30/07/2024,30/06/2026,1000000.0,https://www.transfermarkt.com/jemal-tabidze/profil/spieler/250907,75231,fk-makhachkala
+19,720936,Kirill Zinovich,Attacking Midfield,05/03/2003,23,Belarus,1.88,right,24/01/2024,30/06/2026,400000.0,https://www.transfermarkt.com/kirill-zinovich/profil/spieler/720936,75231,fk-makhachkala
+6,593432,Mehdi Moubarik,Defensive Midfield,22/01/2001,25,Morocco,1.75,right,06/08/2025,30/06/2026,900000.0,https://www.transfermarkt.com/mehdi-moubarik/profil/spieler/593432,75231,fk-makhachkala
+11,1043831,Miro,Centre-Forward,22/04/2003,23,Angola,1.93,left,11/09/2025,30/06/2029,1000000.0,https://www.transfermarkt.com/miro/profil/spieler/1043831,75231,fk-makhachkala
+22,863190,Mohamed Azzi,Right-Back,11/05/2002,23,Algeria,1.77,right,13/02/2025,30/06/2026,800000.0,https://www.transfermarkt.com/mohamed-azzi/profil/spieler/863190,75231,fk-makhachkala
+10,1030739,Mohammadjavad Hosseinnejad,Attacking Midfield,26/06/2003,22,Iran,1.78,left,09/08/2024,30/06/2027,1500000.0,https://www.transfermarkt.com/mohammadjavad-hosseinnejad/profil/spieler/1030739,75231,fk-makhachkala
+99,334425,Mutalip Alibekov,Centre-Back,18/06/1997,28,"Russia, Azerbaijan",1.8,right,29/07/2021,30/06/2026,700000.0,https://www.transfermarkt.com/mutalip-alibekov/profil/spieler/334425,75231,fk-makhachkala
+47,480139,Nikita Glushkov,Central Midfield,19/03/1999,27,Russia,1.76,right,07/09/2021,30/06/2027,900000.0,https://www.transfermarkt.com/nikita-glushkov/profil/spieler/480139,75231,fk-makhachkala
+33,698931,Nikita Karabashev,Goalkeeper,30/06/2002,23,Russia,1.92,right,06/08/2025,30/06/2027,150000.0,https://www.transfermarkt.com/nikita-karabashev/profil/spieler/698931,75231,fk-makhachkala
+9,622454,Razhab Magomedov,Attacking Midfield,03/10/2000,25,Russia,1.8,right,11/07/2022,30/06/2026,600000.0,https://www.transfermarkt.com/razhab-magomedov/profil/spieler/622454,75231,fk-makhachkala
+28,129103,Serder Serderov,Centre-Forward,10/03/1994,32,Russia,1.77,both,28/07/2023,30/06/2026,300000.0,https://www.transfermarkt.com/serder-serderov/profil/spieler/129103,75231,fk-makhachkala
+13,438306,Soslan Kagermazov,Right-Back,20/08/1996,29,Russia,1.85,right,01/07/2021,30/06/2027,700000.0,https://www.transfermarkt.com/soslan-kagermazov/profil/spieler/438306,75231,fk-makhachkala
+77,654591,Temirkan Sundukov,Left-Back,17/09/2001,24,Russia,1.77,right,13/07/2022,30/06/2026,1000000.0,https://www.transfermarkt.com/temirkan-sundukov/profil/spieler/654591,75231,fk-makhachkala
+39,622477,Timur Magomedov,Goalkeeper,20/12/2001,24,Russia,1.96,left,11/07/2022,30/06/2026,800000.0,https://www.transfermarkt.com/timur-magomedov/profil/spieler/622477,75231,fk-makhachkala
+10,252209,Adrián Balboa,Centre-Forward,19/01/1994,32,Uruguay,1.85,right,30/01/2026,30/06/2027,600000.0,https://www.transfermarkt.com/adrian-balboa/profil/spieler/252209,49702,fk-nizhny-novgorod
+15,391907,Aleksandr Ektov,Right-Back,30/01/1996,30,Russia,1.73,right,01/07/2025,30/06/2027,700000.0,https://www.transfermarkt.com/aleksandr-ektov/profil/spieler/391907,49702,fk-nizhny-novgorod
+6,1021819,Alex Opoku Sarfo,Defensive Midfield,20/10/2004,21,Ghana,1.88,right,10/09/2025,30/06/2026,1000000.0,https://www.transfermarkt.com/alex-opoku-sarfo/profil/spieler/1021819,49702,fk-nizhny-novgorod
+77,939065,Andrey Ivlev,Attacking Midfield,21/11/2006,19,Russia,1.8,right,01/07/2025,30/06/2028,1200000.0,https://www.transfermarkt.com/andrey-ivlev/profil/spieler/939065,49702,fk-nizhny-novgorod
+69,1052494,Artem Sidorenko,Central Midfield,03/01/2007,19,Russia,1.7,right,12/02/2026,30/06/2029,250000.0,https://www.transfermarkt.com/artem-sidorenko/profil/spieler/1052494,49702,fk-nizhny-novgorod
+88,315252,Daniil Lesovoy,Left Winger,12/01/1998,28,Russia,1.77,right,17/07/2025,30/06/2028,1500000.0,https://www.transfermarkt.com/daniil-lesovoy/profil/spieler/315252,49702,fk-nizhny-novgorod
+24,923177,Edgardo Fariña,Centre-Back,19/10/2001,24,Panama,1.95,right,24/07/2025,30/06/2028,1000000.0,https://www.transfermarkt.com/edgardo-farina/profil/spieler/923177,49702,fk-nizhny-novgorod
+51,1046215,Egor Koshkin,Goalkeeper,02/05/2006,19,Russia,1.83,right,01/01/2026,30/06/2027,,https://www.transfermarkt.com/egor-koshkin/profil/spieler/1046215,49702,fk-nizhny-novgorod
+17,715359,Egor Smelov,Attacking Midfield,11/03/2005,21,Russia,1.78,right,09/09/2025,30/06/2026,750000.0,https://www.transfermarkt.com/egor-smelov/profil/spieler/715359,49702,fk-nizhny-novgorod
+4,637545,Ilya Kirsh,Centre-Back,21/09/2004,21,Russia,1.91,right,19/02/2026,30/06/2026,600000.0,https://www.transfermarkt.com/ilya-kirsh/profil/spieler/637545,49702,fk-nizhny-novgorod
+23,660000,Juan Camilo Castillo,Left-Back,03/10/2002,23,Colombia,1.82,left,18/01/2025,30/06/2028,400000.0,https://www.transfermarkt.com/juan-camilo-castillo/profil/spieler/660000,49702,fk-nizhny-novgorod
+29,624030,Luka Vesner Ticic,Central Midfield,25/10/2000,25,Slovenia,1.77,right,08/07/2024,30/06/2027,800000.0,https://www.transfermarkt.com/luka-vesner-ticic/profil/spieler/624030,49702,fk-nizhny-novgorod
+70,637552,Maksim Shnaptsev,Right-Back,19/04/2004,22,Russia,1.82,right,20/07/2023,30/06/2027,800000.0,https://www.transfermarkt.com/maksim-shnaptsev/profil/spieler/637552,49702,fk-nizhny-novgorod
+8,793509,Mamadou Maiga,Defensive Midfield,10/02/1995,31,"Mali, Russia",1.78,,01/07/2022,30/06/2027,800000.0,https://www.transfermarkt.com/mamadou-maiga/profil/spieler/793509,49702,fk-nizhny-novgorod
+14,817355,Matvey Urvantsev,Centre-Forward,29/11/2004,21,Russia,1.85,right,02/02/2026,30/06/2028,500000.0,https://www.transfermarkt.com/matvey-urvantsev/profil/spieler/817355,49702,fk-nizhny-novgorod
+19,621397,Nikita Ermakov,Attacking Midfield,19/01/2003,23,Russia,1.83,right,01/07/2024,30/06/2028,500000.0,https://www.transfermarkt.com/nikita-ermakov/profil/spieler/621397,49702,fk-nizhny-novgorod
+22,458387,Nikita Kakkoev,Centre-Back,22/08/1999,26,Russia,1.84,right,01/07/2020,30/06/2027,900000.0,https://www.transfermarkt.com/nikita-kakkoev/profil/spieler/458387,49702,fk-nizhny-novgorod
+30,296513,Nikita Medvedev,Goalkeeper,17/12/1994,31,Russia,1.92,right,01/07/2024,30/06/2027,800000.0,https://www.transfermarkt.com/nikita-medvedev/profil/spieler/296513,49702,fk-nizhny-novgorod
+78,146468,Nikolay Kalinskiy,Defensive Midfield,22/09/1993,32,Russia,1.8,right,03/01/2020,31/05/2027,500000.0,https://www.transfermarkt.com/nikolay-kalinskiy/profil/spieler/146468,49702,fk-nizhny-novgorod
+40,666616,Olakunle Olusegun,Left Winger,23/04/2002,24,Nigeria,1.67,right,23/07/2025,30/06/2026,2500000.0,https://www.transfermarkt.com/olakunle-olusegun/profil/spieler/666616,49702,fk-nizhny-novgorod
+21,879028,Renaldo Cephas,Left Winger,18/12/1999,26,Jamaica,1.79,right,25/07/2025,30/06/2028,900000.0,https://www.transfermarkt.com/renaldo-cephas/profil/spieler/879028,49702,fk-nizhny-novgorod
+-,715384,Stanislav Lapinskiy,Centre-Forward,15/02/2005,21,Russia,1.83,right,04/07/2024,30/06/2027,75000.0,https://www.transfermarkt.com/stanislav-lapinskiy/profil/spieler/715384,49702,fk-nizhny-novgorod
+25,320864,Sven Karic,Centre-Back,07/03/1998,28,Slovenia,1.86,left,11/09/2024,30/06/2027,1200000.0,https://www.transfermarkt.com/sven-karic/profil/spieler/320864,49702,fk-nizhny-novgorod
+1,743231,Vadim Lukyanov,Goalkeeper,16/12/2002,23,Russia,1.94,,02/02/2024,30/06/2026,300000.0,https://www.transfermarkt.com/vadim-lukyanov/profil/spieler/743231,49702,fk-nizhny-novgorod
+32,565171,Vadim Pigas,Right-Back,08/08/2001,24,Belarus,1.84,right,15/08/2025,30/06/2028,800000.0,https://www.transfermarkt.com/vadim-pigas/profil/spieler/565171,49702,fk-nizhny-novgorod
+2,649261,Viktor Aleksandrov,Centre-Back,14/02/2002,24,Russia,1.9,right,01/01/2023,31/12/2026,1000000.0,https://www.transfermarkt.com/viktor-aleksandrov/profil/spieler/649261,49702,fk-nizhny-novgorod
+27,365261,Vyacheslav Grulev,Left Winger,23/03/1999,27,Russia,1.9,left,10/01/2025,30/06/2027,1000000.0,https://www.transfermarkt.com/vyacheslav-grulev/profil/spieler/365261,49702,fk-nizhny-novgorod
+16,718760,Yaroslav Krashevskiy,Left-Back,16/03/2004,22,Russia,1.8,left,11/01/2025,30/06/2028,300000.0,https://www.transfermarkt.com/yaroslav-krashevskiy/profil/spieler/718760,49702,fk-nizhny-novgorod
+3,817386,Yuriy Koledin,Right-Back,10/12/2004,21,Russia,1.74,right,11/09/2025,30/06/2029,500000.0,https://www.transfermarkt.com/yuriy-koledin/profil/spieler/817386,49702,fk-nizhny-novgorod
+5,312502,Aleksey Tataev,Centre-Back,08/10/1998,27,"Russia, Georgia",1.83,right,08/01/2025,15/06/2028,750000.0,https://www.transfermarkt.com/aleksey-tataev/profil/spieler/312502,14589,fk-orenburg
+19,739439,Alexandre Jesus,Centre-Forward,16/09/2001,24,Brazil,1.84,right,06/08/2025,08/06/2029,600000.0,https://www.transfermarkt.com/alexandre-jesus/profil/spieler/739439,14589,fk-orenburg
+32,980773,Alexis Cantero,Left-Back,05/02/2003,23,Paraguay,1.75,left,11/01/2026,30/06/2026,1000000.0,https://www.transfermarkt.com/alexis-cantero/profil/spieler/980773,14589,fk-orenburg
+29,1203845,Anas El Mahraoui,Left Winger,29/03/2001,25,Morocco,1.73,right,19/02/2026,30/06/2026,500000.0,https://www.transfermarkt.com/anas-el-mahraoui/profil/spieler/1203845,14589,fk-orenburg
+95,951303,Andrey Khodanovich,Goalkeeper,08/09/2004,21,Russia,1.95,right,01/07/2024,30/06/2029,100000.0,https://www.transfermarkt.com/andrey-khodanovich/profil/spieler/951303,14589,fk-orenburg
+38,751099,Artem Kasimov,Centre-Back,17/04/2003,23,Russia,1.92,right,01/07/2024,15/06/2028,800000.0,https://www.transfermarkt.com/artem-kasimov/profil/spieler/751099,14589,fk-orenburg
+1,534477,Bogdan Ovsyannikov,Goalkeeper,05/01/1999,27,Russia,1.89,right,05/07/2025,09/06/2028,900000.0,https://www.transfermarkt.com/bogdan-ovsyannikov/profil/spieler/534477,14589,fk-orenburg
+21,1106216,Damián Puebla,Attacking Midfield,15/09/2002,23,Argentina,1.7,right,14/01/2026,30/06/2029,2500000.0,https://www.transfermarkt.com/damian-puebla/profil/spieler/1106216,14589,fk-orenburg
+4,529870,Danila Khotulev,Centre-Back,01/10/2002,23,Russia,1.87,left,09/01/2023,30/06/2028,800000.0,https://www.transfermarkt.com/danila-khotulev/profil/spieler/529870,14589,fk-orenburg
+3,574930,Danila Vedernikov,Left-Back,06/06/2001,24,Russia,1.76,left,11/07/2025,30/06/2027,750000.0,https://www.transfermarkt.com/danila-vedernikov/profil/spieler/574930,14589,fk-orenburg
+20,362572,Dmitriy Rybchinskiy,Right Midfield,19/08/1998,27,Russia,1.79,right,01/07/2024,12/06/2027,800000.0,https://www.transfermarkt.com/dmitriy-rybchinskiy/profil/spieler/362572,14589,fk-orenburg
+37,906774,Du Queiroz,Central Midfield,07/01/2000,26,Brazil,1.71,right,19/08/2025,30/06/2026,1500000.0,https://www.transfermarkt.com/du-queiroz/profil/spieler/906774,14589,fk-orenburg
+26,628049,Emil Tsenov,Centre-Back,26/04/2002,24,Bulgaria,1.91,left,09/09/2025,30/06/2029,900000.0,https://www.transfermarkt.com/emil-tsenov/profil/spieler/628049,14589,fk-orenburg
+7,858259,Emircan Gürlük,Left Winger,15/10/2003,22,Türkiye,1.8,right,01/07/2023,30/06/2026,1200000.0,https://www.transfermarkt.com/emircan-gurluk/profil/spieler/858259,14589,fk-orenburg
+57,575408,Evgeniy Bolotov,Defensive Midfield,04/06/2001,24,Russia,1.82,right,05/07/2025,30/06/2028,600000.0,https://www.transfermarkt.com/evgeniy-bolotov/profil/spieler/575408,14589,fk-orenburg
+18,265589,Fahd Moufi,Right-Back,05/05/1996,29,"Morocco, France",1.77,right,09/08/2025,30/06/2027,900000.0,https://www.transfermarkt.com/fahd-moufi/profil/spieler/265589,14589,fk-orenburg
+30,447462,Gedeon Guzina,Centre-Forward,26/12/1993,32,"Bosnia-Herzegovina, Serbia",1.87,right,05/07/2025,11/06/2027,400000.0,https://www.transfermarkt.com/gedeon-guzina/profil/spieler/447462,14589,fk-orenburg
+33,125755,Irakliy Kvekveskiri,Defensive Midfield,12/03/1990,36,"Russia, Georgia",1.78,left,05/07/2025,30/06/2026,250000.0,https://www.transfermarkt.com/irakliy-kvekveskiri/profil/spieler/125755,14589,fk-orenburg
+65,790281,Ivan Gulko,Centre-Forward,23/10/2003,22,Russia,1.86,right,05/07/2025,30/06/2028,100000.0,https://www.transfermarkt.com/ivan-gulko/profil/spieler/790281,14589,fk-orenburg
+65,1155741,Ivan Ivashchenko,Defensive Midfield,31/10/2007,18,Russia,1.84,right,,30/06/2029,,https://www.transfermarkt.com/ivan-ivashchenko/profil/spieler/1155741,14589,fk-orenburg
+6,653408,Jhon Alex Palacios,Centre-Back,02/10/1999,26,Colombia,1.88,right,13/01/2026,30/06/2029,600000.0,https://www.transfermarkt.com/jhon-alex-palacios/profil/spieler/653408,14589,fk-orenburg
+16,889462,Jordhy Thompson,Right Winger,10/08/2004,21,"Chile, Ecuador",1.61,left,01/07/2024,30/06/2027,1000000.0,https://www.transfermarkt.com/jordhy-thompson/profil/spieler/889462,14589,fk-orenburg
+88,235347,Maksim Rudakov,Goalkeeper,22/01/1996,30,Russia,1.9,right,11/02/2026,30/06/2027,250000.0,https://www.transfermarkt.com/maksim-rudakov/profil/spieler/235347,14589,fk-orenburg
+9,501777,Maksim Saveljev,Centre-Forward,22/01/2002,24,Russia,1.88,right,18/02/2025,15/06/2029,700000.0,https://www.transfermarkt.com/maksim-saveljev/profil/spieler/501777,14589,fk-orenburg
+99,517821,Nikolay Sysuev,Goalkeeper,19/05/1999,26,Russia,1.9,right,01/01/2022,30/06/2026,600000.0,https://www.transfermarkt.com/nikolay-sysuev/profil/spieler/517821,14589,fk-orenburg
+22,787303,Pavel Gorelov,Defensive Midfield,22/01/2003,23,"Armenia, Russia",1.8,right,05/09/2025,30/06/2029,700000.0,https://www.transfermarkt.com/pavel-gorelov/profil/spieler/787303,14589,fk-orenburg
+27,919358,Renat Golybin,Attacking Midfield,30/08/2005,20,Russia,1.82,right,19/02/2026,30/06/2028,250000.0,https://www.transfermarkt.com/renat-golybin/profil/spieler/919358,14589,fk-orenburg
+78,601456,Ruslan Kul,Right Winger,22/02/2000,26,Russia,1.87,right,30/01/2026,15/06/2028,400000.0,https://www.transfermarkt.com/ruslan-kul/profil/spieler/601456,14589,fk-orenburg
+2,817822,Stanislav Poroykov,Right-Back,24/04/2004,22,Russia,1.8,both,05/07/2025,09/06/2028,300000.0,https://www.transfermarkt.com/stanislav-poroykov/profil/spieler/817822,14589,fk-orenburg
+11,515056,Stepan Oganesyan,Right Winger,28/09/2001,24,Russia,1.83,right,01/07/2023,30/06/2026,400000.0,https://www.transfermarkt.com/stepan-oganesyan/profil/spieler/515056,14589,fk-orenburg
+59,520064,Tigran Avanesyan,Defensive Midfield,13/04/2002,24,"Armenia, Russia",1.84,right,06/02/2026,30/06/2026,600000.0,https://www.transfermarkt.com/tigran-avanesyan/profil/spieler/520064,14589,fk-orenburg
+6,963720,Aleksandr Tarasov,Left-Back,10/01/2006,20,Russia,1.83,left,01/07/2025,30/06/2030,300000.0,https://www.transfermarkt.com/aleksandr-tarasov/profil/spieler/963720,1083,fk-rostov
+8,402625,Aleksey Mironov,Central Midfield,01/01/2000,26,Russia,1.75,right,01/07/2022,31/12/2027,1500000.0,https://www.transfermarkt.com/aleksey-mironov/profil/spieler/402625,1083,fk-rostov
+87,727569,Andrey Langovich,Right-Back,28/05/2003,22,Russia,1.8,right,01/07/2021,30/06/2028,1800000.0,https://www.transfermarkt.com/andrey-langovich/profil/spieler/727569,1083,fk-rostov
+91,917991,Anton Shamonin,Centre-Forward,28/03/2005,21,Russia,1.94,right,01/07/2025,30/06/2026,350000.0,https://www.transfermarkt.com/anton-shamonin/profil/spieler/917991,1083,fk-rostov
+71,555135,Daniil Odoevskiy,Goalkeeper,22/01/2003,23,Russia,1.9,both,19/07/2024,30/06/2026,800000.0,https://www.transfermarkt.com/daniil-odoevskiy/profil/spieler/555135,1083,fk-rostov
+58,817607,Daniil Shantaliy,Central Midfield,25/05/2004,21,Russia,1.79,right,01/01/2025,30/06/2026,900000.0,https://www.transfermarkt.com/daniil-shantaliy/profil/spieler/817607,1083,fk-rostov
+5,486083,Danila Prokhin,Centre-Back,24/05/2001,24,Russia,1.86,right,01/07/2021,30/06/2026,1200000.0,https://www.transfermarkt.com/danila-prokhin/profil/spieler/486083,1083,fk-rostov
+22,817604,David Semenchuk,Centre-Back,22/10/2004,21,Russia,1.93,right,01/07/2025,30/06/2028,900000.0,https://www.transfermarkt.com/david-semenchuk/profil/spieler/817604,1083,fk-rostov
+78,235339,Dmitriy Chistyakov,Centre-Back,13/01/1994,32,Russia,1.85,right,01/07/2025,30/06/2027,800000.0,https://www.transfermarkt.com/dmitriy-chistyakov/profil/spieler/235339,1083,fk-rostov
+69,449722,Egor Golenkov,Centre-Forward,07/07/1999,26,Russia,1.89,right,09/02/2022,31/12/2026,2000000.0,https://www.transfermarkt.com/egor-golenkov/profil/spieler/449722,1083,fk-rostov
+28,187024,Evgeniy Chernov,Left-Back,23/10/1992,33,Russia,1.8,left,01/07/2023,30/06/2026,300000.0,https://www.transfermarkt.com/evgeniy-chernov/profil/spieler/187024,1083,fk-rostov
+34,1036407,Eyad El Askalany,Left-Back,24/12/2004,21,Egypt,1.79,left,04/02/2024,31/12/2028,400000.0,https://www.transfermarkt.com/eyad-el-askalany/profil/spieler/1036407,1083,fk-rostov
+67,918332,German Ignatov,Centre-Back,11/08/2005,20,Russia,1.8,right,01/01/2025,30/06/2026,600000.0,https://www.transfermarkt.com/german-ignatov/profil/spieler/918332,1083,fk-rostov
+13,156680,Hidajet Hankic,Goalkeeper,29/06/1994,31,"Bosnia-Herzegovina, Austria",1.87,right,01/07/2024,30/06/2026,250000.0,https://www.transfermarkt.com/hidajet-hankic/profil/spieler/156680,1083,fk-rostov
+17,1339250,Ibraheem Mahfus Ajasa,Left Winger,26/11/2005,20,Nigeria,1.8,right,11/07/2025,30/06/2027,200000.0,https://www.transfermarkt.com/ibraheem-mahfus-ajasa/profil/spieler/1339250,1083,fk-rostov
+40,515050,Ilya Vakhania,Right-Back,14/01/2001,25,Russia,1.8,both,17/07/2023,30/06/2028,3000000.0,https://www.transfermarkt.com/ilya-vakhania/profil/spieler/515050,1083,fk-rostov
+57,817830,Ilya Zhbanov,Left Midfield,25/07/2004,21,Russia,1.87,right,01/07/2025,30/06/2026,300000.0,https://www.transfermarkt.com/ilya-zhbanov/profil/spieler/817830,1083,fk-rostov
+62,787305,Ivan Komarov,Attacking Midfield,15/04/2003,23,Russia,1.77,left,01/01/2023,30/06/2029,1800000.0,https://www.transfermarkt.com/ivan-komarov/profil/spieler/787305,1083,fk-rostov
+19,189715,Khoren Bayramyan,Attacking Midfield,07/01/1992,34,"Armenia, Russia",1.69,right,01/08/2011,30/06/2026,500000.0,https://www.transfermarkt.com/khoren-bayramyan/profil/spieler/189715,1083,fk-rostov
+10,501769,Kirill Shchetinin,Attacking Midfield,17/01/2002,24,Russia,1.78,right,01/07/2022,30/06/2028,2800000.0,https://www.transfermarkt.com/kirill-shchetinin/profil/spieler/501769,1083,fk-rostov
+18,381834,Konstantin Kuchaev,Attacking Midfield,18/03/1998,28,Russia,1.78,right,01/07/2024,30/06/2029,2000000.0,https://www.transfermarkt.com/konstantin-kuchaev/profil/spieler/381834,1083,fk-rostov
+9,603149,Mohammad Mohebi,Left Winger,20/12/1998,27,Iran,1.86,right,13/07/2023,30/06/2026,2800000.0,https://www.transfermarkt.com/mohammad-mohebi/profil/spieler/603149,1083,fk-rostov
+59,939879,Nikita Babakin,Centre-Back,05/01/2006,20,Russia,1.87,right,,31/12/2026,100000.0,https://www.transfermarkt.com/nikita-babakin/profil/spieler/939879,1083,fk-rostov
+3,640692,Oumar Sako,Centre-Back,04/05/1996,29,"Niger, Cote d'Ivoire",1.91,right,01/07/2024,30/06/2027,2500000.0,https://www.transfermarkt.com/oumar-sako/profil/spieler/640692,1083,fk-rostov
+7,866670,Ronaldo,Right Winger,07/12/2000,25,Brazil,1.77,right,10/01/2024,30/06/2028,3500000.0,https://www.transfermarkt.com/ronaldo/profil/spieler/866670,1083,fk-rostov
+1,424022,Rustam Yatimov,Goalkeeper,13/07/1998,27,"Tajikistan, Russia",1.94,right,01/07/2024,30/06/2029,1800000.0,https://www.transfermarkt.com/rustam-yatimov/profil/spieler/424022,1083,fk-rostov
+-,501250,Stepan Melnikov,Right Winger,25/04/2002,24,Russia,1.78,left,20/01/2022,30/06/2026,50000.0,https://www.transfermarkt.com/stepan-melnikov/profil/spieler/501250,1083,fk-rostov
+99,582074,Timur Suleymanov,Centre-Forward,17/03/2000,26,Russia,1.83,both,01/07/2025,30/06/2029,1500000.0,https://www.transfermarkt.com/timur-suleymanov/profil/spieler/582074,1083,fk-rostov
+4,866001,Viktor Melekhin,Centre-Back,16/12/2003,22,Russia,1.89,right,01/09/2021,30/06/2027,3000000.0,https://www.transfermarkt.com/viktor-melekhin/profil/spieler/866001,1083,fk-rostov
+35,918827,Aleksandr Degtev,Goalkeeper,27/04/2005,20,Russia,1.95,right,01/01/2024,30/06/2026,800000.0,https://www.transfermarkt.com/aleksandr-degtev/profil/spieler/918827,41231,fk-sochi
+19,811544,Aleksandr Kovalenko,Central Midfield,08/08/2003,22,Russia,1.77,right,25/07/2025,30/06/2029,1500000.0,https://www.transfermarkt.com/aleksandr-kovalenko/profil/spieler/811544,41231,fk-sochi
+34,623380,Aleksandr Osipov,Defensive Midfield,21/10/1998,27,Russia,1.85,both,01/07/2025,30/06/2028,500000.0,https://www.transfermarkt.com/aleksandr-osipov/profil/spieler/623380,41231,fk-sochi
+3,393858,Aleksandr Soldatenkov,Centre-Back,28/12/1996,29,Russia,1.89,right,11/09/2025,30/06/2028,2500000.0,https://www.transfermarkt.com/aleksandr-soldatenkov/profil/spieler/393858,41231,fk-sochi
+7,263962,Anton Zinkovskiy,Left Winger,14/04/1996,30,Russia,1.75,right,07/07/2025,30/06/2026,2500000.0,https://www.transfermarkt.com/anton-zinkovskiy/profil/spieler/263962,41231,fk-sochi
+18,1021022,Artem Korneev,Left Winger,25/03/2006,20,Russia,1.74,right,18/07/2025,30/06/2026,150000.0,https://www.transfermarkt.com/artem-korneev/profil/spieler/1021022,41231,fk-sochi
+17,380761,Artem Makarchuk,Left-Back,09/11/1995,30,Russia,1.85,left,08/02/2022,30/06/2026,800000.0,https://www.transfermarkt.com/artem-makarchuk/profil/spieler/380761,41231,fk-sochi
+20,649343,Dmitriy Vasiljev,Defensive Midfield,16/06/2004,21,Russia,1.84,right,09/07/2025,30/06/2026,900000.0,https://www.transfermarkt.com/dmitriy-vasiljev/profil/spieler/649343,41231,fk-sochi
+45,333802,François Kamano,Left Winger,02/05/1996,29,Guinea,1.75,right,11/09/2025,30/06/2026,1800000.0,https://www.transfermarkt.com/francois-kamano/profil/spieler/333802,41231,fk-sochi
+23,549012,Gustavo Furtado,Left Winger,14/02/2001,25,"Brazil, Portugal",1.8,left,19/02/2026,30/06/2026,700000.0,https://www.transfermarkt.com/gustavo-furtado/profil/spieler/549012,41231,fk-sochi
+14,607814,Kirill Kravtsov,Defensive Midfield,14/06/2002,23,Russia,1.89,right,22/07/2022,30/06/2026,1200000.0,https://www.transfermarkt.com/kirill-kravtsov/profil/spieler/607814,41231,fk-sochi
+27,379181,Kirill Zaika,Right-Back,07/10/1992,33,Russia,1.68,right,01/07/2018,30/06/2026,350000.0,https://www.transfermarkt.com/kirill-zaika/profil/spieler/379181,41231,fk-sochi
+37,937850,Makar Chirkov,Centre-Back,28/01/2005,21,Russia,1.87,right,01/01/2025,30/06/2028,175000.0,https://www.transfermarkt.com/makar-chirkov/profil/spieler/937850,41231,fk-sochi
+16,623274,Maksim Mukhin,Defensive Midfield,04/11/2001,24,Russia,1.83,right,31/07/2025,30/06/2026,1300000.0,https://www.transfermarkt.com/maksim-mukhin/profil/spieler/623274,41231,fk-sochi
+33,793774,Marcelo Alves,Centre-Back,07/02/1998,28,Brazil,1.92,right,22/02/2024,30/06/2028,750000.0,https://www.transfermarkt.com/marcelo-alves/profil/spieler/793774,41231,fk-sochi
+10,318705,Martin Kramaric,Left Winger,14/11/1997,28,Slovenia,1.78,right,01/07/2023,30/06/2026,750000.0,https://www.transfermarkt.com/martin-kramaric/profil/spieler/318705,41231,fk-sochi
+8,419672,Mikhail Ignatov,Attacking Midfield,04/05/2000,25,Russia,1.87,right,09/07/2025,30/06/2028,1200000.0,https://www.transfermarkt.com/mikhail-ignatov/profil/spieler/419672,41231,fk-sochi
+44,585055,Nemanja Stojic,Centre-Back,15/01/1998,28,Serbia,1.9,right,01/09/2025,30/06/2028,2500000.0,https://www.transfermarkt.com/nemanja-stojic/profil/spieler/585055,41231,fk-sochi
+11,818025,Pavel Meleshin,Centre-Forward,25/03/2004,22,Russia,1.88,right,20/02/2025,30/06/2028,700000.0,https://www.transfermarkt.com/pavel-meleshin/profil/spieler/818025,41231,fk-sochi
+29,284843,Roman Ezhov,Right Winger,02/09/1997,28,Russia,1.81,left,09/07/2025,30/06/2028,1000000.0,https://www.transfermarkt.com/roman-ezhov/profil/spieler/284843,41231,fk-sochi
+59,918824,Ruslan Bart,Right Winger,16/11/2005,20,Russia,1.81,right,01/07/2024,30/06/2027,400000.0,https://www.transfermarkt.com/ruslan-bart/profil/spieler/918824,41231,fk-sochi
+28,379637,Ruslan Magal,Right-Back,24/09/1991,34,Russia,1.72,right,01/07/2024,30/06/2026,200000.0,https://www.transfermarkt.com/ruslan-magal/profil/spieler/379637,41231,fk-sochi
+82,520060,Sergey Volkov,Right-Back,09/09/2002,23,Russia,1.82,right,22/07/2025,30/06/2026,2000000.0,https://www.transfermarkt.com/sergey-volkov/profil/spieler/520060,41231,fk-sochi
+98,220650,Vladimir Iljin,Centre-Forward,20/05/1992,33,Russia,1.89,right,26/09/2025,30/06/2026,450000.0,https://www.transfermarkt.com/vladimir-iljin/profil/spieler/220650,41231,fk-sochi
+4,601852,Vyacheslav Litvinov,Centre-Back,01/04/2001,25,Russia,1.9,right,01/07/2023,30/06/2027,700000.0,https://www.transfermarkt.com/vyacheslav-litvinov/profil/spieler/601852,41231,fk-sochi
+25,366746,Yahia Attiyat Allah,Left-Back,02/03/1995,31,Morocco,1.76,left,08/02/2024,30/06/2027,1200000.0,https://www.transfermarkt.com/yahia-attiyat-allah/profil/spieler/366746,41231,fk-sochi
+99,228660,Yuriy Dyupin,Goalkeeper,17/03/1988,38,Russia,1.87,both,26/07/2025,30/06/2026,250000.0,https://www.transfermarkt.com/yuriy-dyupin/profil/spieler/228660,41231,fk-sochi
+9,910740,Zakhar Fedorov,Centre-Forward,24/12/2004,21,Russia,1.84,right,01/07/2024,30/06/2026,400000.0,https://www.transfermarkt.com/zakhar-fedorov/profil/spieler/910740,41231,fk-sochi
+9,217033,Aleksey Sutormin,Right Winger,10/01/1994,32,Russia,1.88,right,08/07/2025,30/06/2026,800000.0,https://www.transfermarkt.com/aleksey-sutormin/profil/spieler/217033,2696,krylya-sovetov-samara
+11,166086,Amar Rahmanovic,Attacking Midfield,13/05/1994,31,Bosnia-Herzegovina,1.91,left,07/09/2022,30/06/2026,800000.0,https://www.transfermarkt.com/amar-rahmanovic/profil/spieler/166086,2696,krylya-sovetov-samara
+70,898119,Artem Shumanskiy,Centre-Forward,25/11/2004,21,Belarus,1.86,right,29/01/2026,30/06/2026,900000.0,https://www.transfermarkt.com/artem-shumanskiy/profil/spieler/898119,2696,krylya-sovetov-samara
+99,538773,Chinedu Geoffrey,Centre-Forward,01/10/1997,28,Nigeria,1.92,right,30/01/2026,31/12/2027,1000000.0,https://www.transfermarkt.com/chinedu-geoffrey/profil/spieler/538773,2696,krylya-sovetov-samara
+72,403187,Dani Fernández,Right-Back,30/04/1997,28,Spain,1.78,right,21/01/2026,30/06/2028,800000.0,https://www.transfermarkt.com/dani-fernandez/profil/spieler/403187,2696,krylya-sovetov-samara
+5,353559,Dominik Oroz,Centre-Back,29/10/2000,25,"Croatia, Austria",1.92,right,24/08/2024,30/06/2027,1000000.0,https://www.transfermarkt.com/dominik-oroz/profil/spieler/353559,2696,krylya-sovetov-samara
+39,177350,Evgeniy Frolov,Goalkeeper,05/02/1988,38,Russia,1.94,right,02/02/2020,30/06/2026,50000.0,https://www.transfermarkt.com/evgeniy-frolov/profil/spieler/177350,2696,krylya-sovetov-samara
+22,524403,Fernando Costanza,Defensive Midfield,29/11/1998,27,"Brazil, Italy",1.82,both,30/01/2022,30/06/2028,2500000.0,https://www.transfermarkt.com/fernando-costanza/profil/spieler/524403,2696,krylya-sovetov-samara
+31,1120902,Gonzalo Requena,Centre-Back,04/03/2003,23,Argentina,1.85,right,19/02/2026,31/12/2026,1800000.0,https://www.transfermarkt.com/gonzalo-requena/profil/spieler/1120902,2696,krylya-sovetov-samara
+77,334440,Ilzat Akhmetov,Attacking Midfield,31/12/1997,28,"Russia, Kyrgyzstan",1.73,right,06/08/2025,30/06/2026,1500000.0,https://www.transfermarkt.com/ilzat-akhmetov/profil/spieler/334440,2696,krylya-sovetov-samara
+18,697954,Ivan Lepskiy,Centre-Back,19/01/2005,21,Russia,1.85,left,09/07/2025,30/06/2026,900000.0,https://www.transfermarkt.com/ivan-lepskiy/profil/spieler/697954,2696,krylya-sovetov-samara
+19,371627,Ivan Oleynikov,Right Winger,24/08/1998,27,Russia,1.78,right,05/08/2024,30/06/2027,1500000.0,https://www.transfermarkt.com/ivan-oleynikov/profil/spieler/371627,2696,krylya-sovetov-samara
+26,372730,Jimmy Marín,Right Winger,08/10/1997,28,Costa Rica,1.7,both,11/07/2025,30/06/2028,900000.0,https://www.transfermarkt.com/jimmy-marin/profil/spieler/372730,2696,krylya-sovetov-samara
+2,498015,Kirill Pechenin,Left-Back,18/03/1997,29,Belarus,1.76,left,21/02/2024,30/06/2029,1200000.0,https://www.transfermarkt.com/kirill-pechenin/profil/spieler/498015,2696,krylya-sovetov-samara
+20,718763,Kirill Stolbov,Central Midfield,08/04/2004,22,Russia,1.78,left,14/01/2026,31/12/2029,600000.0,https://www.transfermarkt.com/kirill-stolbov/profil/spieler/718763,2696,krylya-sovetov-samara
+8,447101,Maksim Vityugov,Defensive Midfield,01/02/1998,28,Russia,1.79,right,01/08/2020,30/06/2027,800000.0,https://www.transfermarkt.com/maksim-vityugov/profil/spieler/447101,2696,krylya-sovetov-samara
+14,585082,Mihajlo Banjac,Central Midfield,10/11/1999,26,Serbia,1.86,left,16/07/2025,30/06/2028,1500000.0,https://www.transfermarkt.com/mihajlo-banjac/profil/spieler/585082,2696,krylya-sovetov-samara
+23,214238,Nikita Chernov,Centre-Back,14/01/1996,30,Russia,1.88,right,07/08/2025,30/06/2026,1500000.0,https://www.transfermarkt.com/nikita-chernov/profil/spieler/214238,2696,krylya-sovetov-samara
+80,538954,Nikita Kokarev,Goalkeeper,08/01/2003,23,Russia,1.87,right,08/07/2025,30/06/2028,900000.0,https://www.transfermarkt.com/nikita-kokarev/profil/spieler/538954,2696,krylya-sovetov-samara
+15,285868,Nikolay Rasskazov,Right-Back,04/01/1998,28,Russia,1.78,right,27/01/2023,30/06/2026,1200000.0,https://www.transfermarkt.com/nikolay-rasskazov/profil/spieler/285868,2696,krylya-sovetov-samara
+24,422838,Roman Evgenjev,Centre-Back,23/02/1999,27,Russia,1.93,right,15/07/2022,30/06/2026,1000000.0,https://www.transfermarkt.com/roman-evgenjev/profil/spieler/422838,2696,krylya-sovetov-samara
+6,622461,Sergey Babkin,Central Midfield,25/09/2002,23,Russia,1.76,right,12/09/2023,30/06/2029,1800000.0,https://www.transfermarkt.com/sergey-babkin/profil/spieler/622461,2696,krylya-sovetov-samara
+47,265282,Sergey Bozhin,Centre-Back,12/09/1994,31,Russia,1.87,left,01/07/2025,30/06/2027,900000.0,https://www.transfermarkt.com/sergey-bozhin/profil/spieler/265282,2696,krylya-sovetov-samara
+30,61397,Sergey Pesjakov,Goalkeeper,16/12/1988,37,Russia,1.99,right,01/07/2024,30/06/2026,250000.0,https://www.transfermarkt.com/sergey-pesjakov/profil/spieler/61397,2696,krylya-sovetov-samara
+3,539469,Thomas Galdames,Left-Back,20/11/1998,27,Chile,1.8,left,03/08/2024,30/06/2027,1500000.0,https://www.transfermarkt.com/thomas-galdames/profil/spieler/539469,2696,krylya-sovetov-samara
+91,1249173,Vladimir Ignatenko,Centre-Forward,12/05/2006,19,Russia,1.94,,01/07/2025,30/06/2027,400000.0,https://www.transfermarkt.com/vladimir-ignatenko/profil/spieler/1249173,2696,krylya-sovetov-samara
+10,430484,Vladimir Khubulov,Left Winger,02/03/2001,25,Russia,1.79,both,15/07/2022,30/06/2026,500000.0,https://www.transfermarkt.com/vladimir-khubulov/profil/spieler/430484,2696,krylya-sovetov-samara
+19,318468,Aleksandr Rudenko,Left Winger,15/03/1999,27,Russia,1.73,left,01/07/2025,30/06/2028,2500000.0,https://www.transfermarkt.com/aleksandr-rudenko/profil/spieler/318468,932,lokomotiv-moskau
+45,515051,Aleksandr Silyanov,Right-Back,17/02/2001,25,Russia,1.85,right,01/07/2021,30/06/2029,7000000.0,https://www.transfermarkt.com/aleksandr-silyanov/profil/spieler/515051,932,lokomotiv-moskau
+83,720286,Aleksey Batrakov,Attacking Midfield,09/06/2005,20,Russia,1.73,right,01/01/2024,30/06/2029,25000000.0,https://www.transfermarkt.com/aleksey-batrakov/profil/spieler/720286,932,lokomotiv-moskau
+1,260677,Anton Mitryushkin,Goalkeeper,08/02/1996,30,Russia,1.89,right,01/07/2024,30/06/2030,3000000.0,https://www.transfermarkt.com/anton-mitryushkin/profil/spieler/260677,932,lokomotiv-moskau
+93,691920,Artem Karpukas,Defensive Midfield,13/06/2002,23,Russia,1.84,right,01/02/2022,30/06/2027,6000000.0,https://www.transfermarkt.com/artem-karpukas/profil/spieler/691920,932,lokomotiv-moskau
+94,211727,Artem Timofeev,Defensive Midfield,12/01/1994,32,Russia,1.85,right,04/07/2024,30/06/2026,800000.0,https://www.transfermarkt.com/artem-timofeev/profil/spieler/211727,932,lokomotiv-moskau
+2,189485,Cristian Ramírez,Left-Back,12/08/1994,31,"Ecuador, Russia",1.72,left,26/07/2025,30/06/2027,2000000.0,https://www.transfermarkt.com/cristian-ramirez/profil/spieler/189485,932,lokomotiv-moskau
+23,387687,César Montes,Centre-Back,24/02/1997,29,Mexico,1.95,right,12/09/2024,30/06/2029,7000000.0,https://www.transfermarkt.com/cesar-montes/profil/spieler/387687,932,lokomotiv-moskau
+74,1037572,Daniil Chevardin,Defensive Midfield,22/08/2006,19,Russia,1.76,right,01/01/2026,30/06/2028,100000.0,https://www.transfermarkt.com/daniil-chevardin/profil/spieler/1037572,932,lokomotiv-moskau
+16,838670,Daniil Veselov,Goalkeeper,30/01/2005,21,Russia,1.93,left,26/07/2024,30/06/2027,200000.0,https://www.transfermarkt.com/daniil-veselov/profil/spieler/838670,932,lokomotiv-moskau
+25,381714,Danil Prutsev,Central Midfield,25/03/2000,26,Russia,1.74,right,28/08/2025,30/06/2026,5000000.0,https://www.transfermarkt.com/danil-prutsev/profil/spieler/381714,932,lokomotiv-moskau
+90,948363,Danila Godyaev,Central Midfield,20/04/2004,22,Russia,1.7,right,01/02/2024,30/06/2028,1200000.0,https://www.transfermarkt.com/danila-godyaev/profil/spieler/948363,932,lokomotiv-moskau
+10,370287,Dmitriy Vorobyov,Centre-Forward,28/11/1997,28,Russia,1.85,right,01/07/2024,30/06/2027,5000000.0,https://www.transfermarkt.com/dmitriy-vorobyov/profil/spieler/370287,932,lokomotiv-moskau
+59,697724,Egor Pogostnov,Centre-Back,01/03/2004,22,Russia,1.98,right,01/01/2023,30/06/2029,1800000.0,https://www.transfermarkt.com/egor-pogostnov/profil/spieler/697724,932,lokomotiv-moskau
+85,652270,Evgeniy Morozov,Centre-Back,14/02/2001,25,Russia,1.89,right,01/07/2022,30/06/2029,4000000.0,https://www.transfermarkt.com/evgeniy-morozov/profil/spieler/652270,932,lokomotiv-moskau
+5,378953,Gerzino Nyamsi,Centre-Back,22/01/1997,29,"Cameroon, France",1.95,right,01/02/2024,30/06/2027,4000000.0,https://www.transfermarkt.com/gerzino-nyamsi/profil/spieler/378953,932,lokomotiv-moskau
+22,230946,Ilya Lantratov,Goalkeeper,11/11/1995,30,Russia,1.95,right,01/01/2023,30/06/2029,1800000.0,https://www.transfermarkt.com/ilya-lantratov/profil/spieler/230946,932,lokomotiv-moskau
+3,729266,Lucas Fasson,Centre-Back,30/05/2001,24,"Brazil, Italy",1.87,left,01/07/2022,30/06/2026,4000000.0,https://www.transfermarkt.com/lucas-fasson/profil/spieler/729266,932,lokomotiv-moskau
+32,689628,Lucas Vera,Central Midfield,18/04/1997,29,Argentina,1.64,right,01/01/2026,30/06/2028,3000000.0,https://www.transfermarkt.com/lucas-vera/profil/spieler/689628,932,lokomotiv-moskau
+24,382535,Maksim Nenakhov,Right-Back,13/12/1998,27,Russia,1.78,both,01/07/2021,30/06/2028,3500000.0,https://www.transfermarkt.com/maksim-nenakhov/profil/spieler/382535,932,lokomotiv-moskau
+88,749186,Mikhail Shchetinin,Defensive Midfield,08/07/2005,20,Russia,1.83,right,01/01/2024,30/06/2026,400000.0,https://www.transfermarkt.com/mikhail-shchetinin/profil/spieler/749186,932,lokomotiv-moskau
+14,697728,Nikita Saltykov,Left Winger,11/08/2004,21,Russia,1.74,right,07/01/2024,31/01/2028,1800000.0,https://www.transfermarkt.com/nikita-saltykov/profil/spieler/697728,932,lokomotiv-moskau
+27,300538,Nikolay Komlichenko,Centre-Forward,29/06/1995,30,Russia,1.9,right,01/07/2025,30/06/2028,3800000.0,https://www.transfermarkt.com/nikolay-komlichenko/profil/spieler/300538,932,lokomotiv-moskau
+99,946413,Ruslan Myalkovskiy,Left Winger,07/05/2006,19,Belarus,1.85,left,10/01/2025,30/06/2028,400000.0,https://www.transfermarkt.com/ruslan-myalkovskiy/profil/spieler/946413,932,lokomotiv-moskau
+9,516751,Sergey Pinyaev,Left Winger,02/11/2004,21,Russia,1.7,both,01/01/2023,30/06/2028,9000000.0,https://www.transfermarkt.com/sergey-pinyaev/profil/spieler/516751,932,lokomotiv-moskau
+27,745284,Vadim Rakov,Right Winger,09/01/2005,21,Russia,1.78,both,01/07/2023,30/06/2027,3000000.0,https://www.transfermarkt.com/vadim-rakov/profil/spieler/745284,932,lokomotiv-moskau
+8,393864,Vladislav Sarveli,Centre-Forward,01/10/1997,28,Russia,1.76,right,01/07/2023,30/06/2026,700000.0,https://www.transfermarkt.com/vladislav-sarveli/profil/spieler/393864,932,lokomotiv-moskau
+7,279242,Zelimkhan Bakaev,Right Winger,01/07/1996,29,Russia,1.8,left,01/07/2025,30/06/2027,2500000.0,https://www.transfermarkt.com/zelimkhan-bakaev/profil/spieler/279242,932,lokomotiv-moskau
+77,393699,Aleksandar Jukic,Central Midfield,26/07/2000,25,Austria,1.84,right,01/07/2024,30/06/2028,800000.0,https://www.transfermarkt.com/aleksandar-jukic/profil/spieler/393699,2698,rubin-kazan
+9,292837,Aleksandr Lomovitskiy,Right Winger,27/01/1998,28,Russia,1.82,left,01/01/2022,30/06/2026,400000.0,https://www.transfermarkt.com/aleksandr-lomovitskiy/profil/spieler/292837,2698,rubin-kazan
+21,93177,Aleksandr Zotov,Central Midfield,27/08/1990,35,Russia,1.78,right,01/07/2022,30/06/2026,100000.0,https://www.transfermarkt.com/aleksandr-zotov/profil/spieler/93177,2698,rubin-kazan
+27,379634,Aleksey Gritsaenko,Centre-Back,25/05/1995,30,Russia,1.86,right,01/02/2021,30/06/2027,1200000.0,https://www.transfermarkt.com/aleksey-gritsaenko/profil/spieler/379634,2698,rubin-kazan
+1,549983,Aleksey Kenyaykin,Goalkeeper,23/08/1998,27,Russia,1.99,right,18/02/2026,30/06/2028,350000.0,https://www.transfermarkt.com/aleksey-kenyaykin/profil/spieler/549983,2698,rubin-kazan
+12,426326,Anderson Arroyo,Right-Back,27/09/1999,26,Colombia,1.76,right,10/09/2025,30/06/2029,1800000.0,https://www.transfermarkt.com/anderson-arroyo/profil/spieler/426326,2698,rubin-kazan
+30,221992,Anton Shvets,Defensive Midfield,26/04/1993,33,"Russia, Ukraine",1.9,both,16/09/2025,30/06/2026,750000.0,https://www.transfermarkt.com/anton-shvets/profil/spieler/221992,2698,rubin-kazan
+25,70074,Artur Nigmatullin,Goalkeeper,17/05/1991,34,Russia,1.94,right,01/07/2024,30/06/2026,350000.0,https://www.transfermarkt.com/artur-nigmatullin/profil/spieler/70074,2698,rubin-kazan
+8,574669,Bogdan Jocic,Central Midfield,11/01/2001,25,Serbia,1.84,both,21/02/2024,30/06/2027,1000000.0,https://www.transfermarkt.com/bogdan-jocic/profil/spieler/574669,2698,rubin-kazan
+14,279570,Daler Kuzyaev,Central Midfield,15/01/1993,33,Russia,1.82,right,24/09/2025,30/06/2026,3500000.0,https://www.transfermarkt.com/daler-kuzyaev/profil/spieler/279570,2698,rubin-kazan
+44,522145,Daniil Kuznetsov,Right Winger,23/04/2003,23,Russia,1.82,both,20/02/2022,31/12/2026,500000.0,https://www.transfermarkt.com/daniil-kuznetsov/profil/spieler/522145,2698,rubin-kazan
+59,726446,Daniil Motorin,Centre-Forward,16/07/2004,21,Russia,1.84,right,22/01/2025,30/06/2026,600000.0,https://www.transfermarkt.com/daniil-motorin/profil/spieler/726446,2698,rubin-kazan
+99,452464,Dardan Shabanhaxhaj,Centre-Forward,23/04/2001,25,"Kosovo, Austria",1.83,right,25/01/2024,30/06/2030,1500000.0,https://www.transfermarkt.com/dardan-shabanhaxhaj/profil/spieler/452464,2698,rubin-kazan
+3,401769,Denil Maldonado,Centre-Back,26/05/1998,27,Honduras,1.83,right,10/07/2025,30/06/2029,1800000.0,https://www.transfermarkt.com/denil-maldonado/profil/spieler/401769,2698,rubin-kazan
+70,148118,Dmitriy Kabutov,Right-Back,26/03/1992,34,Russia,1.73,right,01/07/2022,30/06/2027,600000.0,https://www.transfermarkt.com/dmitriy-kabutov/profil/spieler/148118,2698,rubin-kazan
+2,584231,Egor Teslenko,Centre-Back,31/01/2001,25,Russia,1.86,right,17/02/2022,30/06/2029,2500000.0,https://www.transfermarkt.com/egor-teslenko/profil/spieler/584231,2698,rubin-kazan
+87,1119146,Enri Mukba,Right Winger,22/09/2005,20,"Russia, Georgia",1.89,right,01/01/2026,30/06/2029,100000.0,https://www.transfermarkt.com/enri-mukba/profil/spieler/1119146,2698,rubin-kazan
+38,389624,Evgeniy Staver,Goalkeeper,16/02/1998,28,Russia,1.9,right,01/07/2024,30/06/2027,2000000.0,https://www.transfermarkt.com/evgeniy-staver/profil/spieler/389624,2698,rubin-kazan
+7,401706,Ignacio Saavedra,Defensive Midfield,12/01/1999,27,Chile,1.74,right,19/02/2026,30/06/2026,1800000.0,https://www.transfermarkt.com/ignacio-saavedra/profil/spieler/401706,2698,rubin-kazan
+5,227538,Igor Vujacic,Centre-Back,08/08/1994,31,"Montenegro, Serbia",1.89,right,02/07/2023,30/06/2029,3000000.0,https://www.transfermarkt.com/igor-vujacic/profil/spieler/227538,2698,rubin-kazan
+51,700385,Ilya Rozhkov,Left-Back,29/03/2005,21,Russia,1.8,right,01/07/2023,30/06/2028,5000000.0,https://www.transfermarkt.com/ilya-rozhkov/profil/spieler/700385,2698,rubin-kazan
+43,804933,Jacques Siwe,Centre-Forward,29/07/2001,24,"France, Cameroon",1.86,right,11/09/2025,30/06/2029,2500000.0,https://www.transfermarkt.com/jacques-siwe/profil/spieler/804933,2698,rubin-kazan
+4,604073,Konstantin Nizhegorodov,Centre-Back,21/06/2002,23,"Russia, Ukraine",1.87,left,01/07/2021,30/06/2029,600000.0,https://www.transfermarkt.com/konstantin-nizhegorodov/profil/spieler/604073,2698,rubin-kazan
+18,599046,Marat Apshatsev,Central Midfield,27/05/2001,24,Russia,1.77,right,01/01/2022,30/06/2028,250000.0,https://www.transfermarkt.com/marat-apshatsev/profil/spieler/599046,2698,rubin-kazan
+10,521872,Mirlind Daku,Centre-Forward,01/01/1998,28,"Albania, Kosovo",1.92,right,11/07/2023,30/06/2029,10000000.0,https://www.transfermarkt.com/mirlind-daku/profil/spieler/521872,2698,rubin-kazan
+11,355692,Nazmi Gripshi,Attacking Midfield,05/07/1997,28,Albania,1.76,right,19/02/2026,30/06/2029,1500000.0,https://www.transfermarkt.com/nazmi-gripshi/profil/spieler/355692,2698,rubin-kazan
+98,720281,Nikita Lobov,Centre-Back,21/07/2005,20,Russia,1.86,right,29/08/2025,30/06/2029,500000.0,https://www.transfermarkt.com/nikita-lobov/profil/spieler/720281,2698,rubin-kazan
+96,995045,Nikita Vasiljev,Defensive Midfield,14/12/2006,19,Russia,1.75,right,01/01/2025,30/06/2029,100000.0,https://www.transfermarkt.com/nikita-vasiljev/profil/spieler/995045,2698,rubin-kazan
+19,16756,Oleg Ivanov,Attacking Midfield,04/08/1986,39,Russia,1.92,right,01/07/2022,30/06/2026,100000.0,https://www.transfermarkt.com/oleg-ivanov/profil/spieler/16756,2698,rubin-kazan
+23,685854,Ruslan Bezrukov,Left Midfield,21/03/2002,24,Russia,1.79,both,30/08/2022,30/06/2029,1000000.0,https://www.transfermarkt.com/ruslan-bezrukov/profil/spieler/685854,2698,rubin-kazan
+6,565852,Ugochukwu Iwu,Defensive Midfield,28/11/1999,26,"Armenia, Nigeria",1.77,right,16/07/2023,30/06/2028,3000000.0,https://www.transfermarkt.com/ugochukwu-iwu/profil/spieler/565852,2698,rubin-kazan
+26,615642,Uros Drezgic,Centre-Back,04/10/2002,23,Serbia,1.9,right,14/09/2023,30/06/2027,300000.0,https://www.transfermarkt.com/uros-drezgic/profil/spieler/615642,2698,rubin-kazan
+22,619279,Veldin Hodza,Defensive Midfield,15/10/2002,23,"Kosovo, Croatia",1.83,right,12/09/2024,30/06/2028,3500000.0,https://www.transfermarkt.com/veldin-hodza/profil/spieler/619279,2698,rubin-kazan
+56,47004,Aleksandr Dovbnya,Goalkeeper,10/04/1987,39,Russia,1.94,right,26/07/2024,30/06/2026,50000.0,https://www.transfermarkt.com/aleksandr-dovbnya/profil/spieler/47004,232,spartak-moscou
+98,351419,Aleksandr Maksimenko,Goalkeeper,19/03/1998,28,Russia,1.9,left,01/07/2018,30/06/2027,4500000.0,https://www.transfermarkt.com/aleksandr-maksimenko/profil/spieler/351419,232,spartak-moscou
+4,250844,Alexander Djiku,Centre-Back,09/08/1994,31,"Ghana, France",1.82,right,09/09/2025,30/06/2027,4000000.0,https://www.transfermarkt.com/alexander-djiku/profil/spieler/250844,232,spartak-moscou
+91,70114,Anton Zabolotnyi,Centre-Forward,13/06/1991,34,Russia,1.91,right,01/07/2025,30/06/2026,500000.0,https://www.transfermarkt.com/anton-zabolotnyi/profil/spieler/70114,232,spartak-moscou
+35,248054,Christopher Martins,Defensive Midfield,19/02/1997,29,"Luxembourg, Cape Verde",1.88,right,01/07/2022,30/06/2028,4500000.0,https://www.transfermarkt.com/christopher-martins/profil/spieler/248054,232,spartak-moscou
+3,572326,Christopher Wooh,Centre-Back,18/09/2001,24,"Cameroon, France",1.91,right,05/09/2025,30/06/2029,4500000.0,https://www.transfermarkt.com/christopher-wooh/profil/spieler/572326,232,spartak-moscou
+97,649303,Daniil Denisov,Right-Back,21/10/2002,23,Russia,1.85,right,01/07/2022,30/06/2030,4000000.0,https://www.transfermarkt.com/daniil-denisov/profil/spieler/649303,232,spartak-moscou
+28,726445,Daniil Zorin,Attacking Midfield,22/02/2004,22,Russia,1.8,right,01/07/2023,30/06/2028,800000.0,https://www.transfermarkt.com/daniil-zorin/profil/spieler/726445,232,spartak-moscou
+5,456623,Esequiel Barco,Attacking Midfield,29/03/1999,27,Argentina,1.66,right,25/07/2024,30/06/2027,14000000.0,https://www.transfermarkt.com/esequiel-barco/profil/spieler/456623,232,spartak-moscou
+83,337800,Gedson Fernandes,Central Midfield,09/01/1999,27,"Portugal, Sao Tome and Principe",1.83,right,31/07/2025,30/06/2029,18000000.0,https://www.transfermarkt.com/gedson-fernandes/profil/spieler/337800,232,spartak-moscou
+27,817700,Igor Dmitriev,Left Winger,24/07/2004,21,Russia,1.78,left,26/07/2024,30/06/2028,3500000.0,https://www.transfermarkt.com/igor-dmitriev/profil/spieler/817700,232,spartak-moscou
+1,217686,Ilya Pomazun,Goalkeeper,16/08/1996,29,Russia,1.95,right,02/02/2025,30/06/2027,1000000.0,https://www.transfermarkt.com/ilya-pomazun/profil/spieler/217686,232,spartak-moscou
+14,522030,Ilya Samoshnikov,Left-Back,14/11/1997,28,Russia,1.77,right,19/08/2025,30/06/2028,2500000.0,https://www.transfermarkt.com/ilya-samoshnikov/profil/spieler/522030,232,spartak-moscou
+11,354587,Levi García,Centre-Forward,20/11/1997,28,Trinidad and Tobago,1.81,left,07/02/2025,30/06/2028,7500000.0,https://www.transfermarkt.com/levi-garcia/profil/spieler/354587,232,spartak-moscou
+9,645173,Manfred Ugalde,Centre-Forward,25/05/2002,23,Costa Rica,1.73,right,29/01/2024,30/06/2028,14000000.0,https://www.transfermarkt.com/manfred-ugalde/profil/spieler/645173,232,spartak-moscou
+10,516722,Marquinhos,Left Winger,24/10/1999,26,Brazil,1.65,right,03/08/2024,30/06/2029,6000000.0,https://www.transfermarkt.com/marquinhos/profil/spieler/516722,232,spartak-moscou
+18,381833,Nail Umyarov,Defensive Midfield,27/06/2000,25,Russia,1.82,right,01/01/2019,30/06/2029,7000000.0,https://www.transfermarkt.com/nail-umyarov/profil/spieler/381833,232,spartak-moscou
+24,1180777,Nikita Massalyga,Right Winger,09/10/2007,18,Russia,1.87,left,01/01/2026,30/06/2028,300000.0,https://www.transfermarkt.com/nikita-massalyga/profil/spieler/1180777,232,spartak-moscou
+2,461512,Oleg Reabciuk,Left-Back,16/01/1998,28,"Moldova, Portugal",1.77,left,07/08/2023,30/06/2026,3000000.0,https://www.transfermarkt.com/oleg-reabciuk/profil/spieler/461512,232,spartak-moscou
+7,756991,Pablo Solari,Right Winger,22/03/2001,25,Argentina,1.78,right,11/02/2025,30/06/2029,7000000.0,https://www.transfermarkt.com/pablo-solari/profil/spieler/756991,232,spartak-moscou
+62,1384080,Pavel Polekh,Left Winger,02/12/2009,16,Russia,1.74,,,30/06/2028,250000.0,https://www.transfermarkt.com/pavel-polekh/profil/spieler/1384080,232,spartak-moscou
+47,166277,Roman Zobnin,Central Midfield,11/02/1994,32,Russia,1.82,right,01/07/2016,30/06/2027,2500000.0,https://www.transfermarkt.com/roman-zobnin/profil/spieler/166277,232,spartak-moscou
+68,520073,Ruslan Litvinov,Centre-Back,18/08/2001,24,Russia,1.84,right,01/09/2021,30/06/2029,5000000.0,https://www.transfermarkt.com/ruslan-litvinov/profil/spieler/520073,232,spartak-moscou
+6,222805,Srdjan Babic,Centre-Back,22/04/1996,30,"Serbia, Bosnia-Herzegovina",1.94,left,21/08/2023,30/06/2027,5000000.0,https://www.transfermarkt.com/srdjan-babic/profil/spieler/222805,232,spartak-moscou
+77,280701,Théo Bongonda,Right Winger,20/11/1995,30,"DR Congo, Belgium",1.75,left,12/07/2023,30/06/2026,4000000.0,https://www.transfermarkt.com/theo-bongonda/profil/spieler/280701,232,spartak-moscou
+17,706618,Vladislav Saus,Right Midfield,06/08/2003,22,Russia,1.77,right,26/01/2026,30/06/2030,2500000.0,https://www.transfermarkt.com/vladislav-saus/profil/spieler/706618,232,spartak-moscou
+21,84483,Aleksandr Erokhin,Attacking Midfield,13/10/1989,36,Russia,1.95,right,01/07/2017,30/06/2026,200000.0,https://www.transfermarkt.com/aleksandr-erokhin/profil/spieler/84483,964,zenit-sao-petersburgo
+7,464259,Aleksandr Sobolev,Centre-Forward,07/03/1997,29,Russia,1.95,right,30/08/2024,30/06/2027,6000000.0,https://www.transfermarkt.com/aleksandr-sobolev/profil/spieler/464259,964,zenit-sao-petersburgo
+17,362570,Andrey Mostovoy,Left Winger,05/11/1997,28,Russia,1.8,right,01/07/2019,30/06/2027,4000000.0,https://www.transfermarkt.com/andrey-mostovoy/profil/spieler/362570,964,zenit-sao-petersburgo
+23,455016,Arsen Adamov,Right-Back,20/10/1999,26,Russia,1.8,right,25/01/2022,30/06/2026,1500000.0,https://www.transfermarkt.com/arsen-adamov/profil/spieler/455016,964,zenit-sao-petersburgo
+57,718755,Bogdan Moskvichev,Goalkeeper,30/04/2004,21,Russia,1.93,right,01/07/2024,30/06/2029,700000.0,https://www.transfermarkt.com/bogdan-moskvichev/profil/spieler/718755,964,zenit-sao-petersburgo
+61,1109232,Daniil Kondakov,Central Midfield,06/03/2008,18,Russia,1.78,right,01/01/2026,30/06/2028,700000.0,https://www.transfermarkt.com/daniil-kondakov/profil/spieler/1109232,964,zenit-sao-petersburgo
+16,334477,Denis Adamov,Goalkeeper,20/02/1998,28,Russia,1.96,right,25/07/2023,30/06/2027,2500000.0,https://www.transfermarkt.com/denis-adamov/profil/spieler/334477,964,zenit-sao-petersburgo
+3,220793,Douglas Santos,Left-Back,22/03/1994,32,"Brazil, Russia",1.76,left,04/07/2019,30/06/2027,8000000.0,https://www.transfermarkt.com/douglas-santos/profil/spieler/220793,964,zenit-sao-petersburgo
+1,312891,Evgeniy Latyshonok,Goalkeeper,21/06/1998,27,Russia,1.89,right,01/07/2024,30/06/2028,2000000.0,https://www.transfermarkt.com/evgeniy-latyshonok/profil/spieler/312891,964,zenit-sao-petersburgo
+31,814269,Gustavo Mantuan,Right-Back,20/06/2001,24,"Brazil, Italy",1.76,right,01/07/2023,30/06/2030,5000000.0,https://www.transfermarkt.com/gustavo-mantuan/profil/spieler/814269,964,zenit-sao-petersburgo
+78,532732,Igor Diveev,Centre-Back,27/09/1999,26,Russia,1.94,right,11/01/2026,30/06/2029,9000000.0,https://www.transfermarkt.com/igor-diveev/profil/spieler/532732,964,zenit-sao-petersburgo
+9,649317,Jhon Durán,Centre-Forward,13/12/2003,22,Colombia,1.85,left,09/02/2026,30/06/2026,25000000.0,https://www.transfermarkt.com/jhon-duran/profil/spieler/649317,964,zenit-sao-petersburgo
+14,964582,Jhon Jhon,Attacking Midfield,09/09/2002,23,Brazil,1.78,right,28/01/2026,30/06/2031,16000000.0,https://www.transfermarkt.com/jhon-jhon/profil/spieler/964582,964,zenit-sao-petersburgo
+11,800175,Luiz Henrique,Right Winger,02/01/2001,25,Brazil,1.82,left,20/01/2025,31/12/2028,24000000.0,https://www.transfermarkt.com/luiz-henrique/profil/spieler/800175,964,zenit-sao-petersburgo
+10,448981,Maksim Glushenkov,Second Striker,28/07/1999,26,Russia,1.79,left,01/07/2024,30/06/2028,14000000.0,https://www.transfermarkt.com/maksim-glushenkov/profil/spieler/448981,964,zenit-sao-petersburgo
+41,27706,Mikhail Kerzhakov,Goalkeeper,28/01/1987,39,Russia,1.9,right,01/07/2015,30/06/2026,100000.0,https://www.transfermarkt.com/mikhail-kerzhakov/profil/spieler/27706,964,zenit-sao-petersburgo
+33,520454,Nino,Centre-Back,10/04/1997,29,Brazil,1.88,right,04/01/2024,30/06/2028,10000000.0,https://www.transfermarkt.com/nino/profil/spieler/520454,964,zenit-sao-petersburgo
+28,465408,Nuraly Alip,Centre-Back,22/12/1999,26,Kazakhstan,1.88,left,01/01/2023,30/06/2028,2500000.0,https://www.transfermarkt.com/nuraly-alip/profil/spieler/465408,964,zenit-sao-petersburgo
+20,1004741,Pedro,Left Winger,05/02/2006,20,Brazil,1.7,right,05/02/2024,30/06/2030,17000000.0,https://www.transfermarkt.com/pedro/profil/spieler/1004741,964,zenit-sao-petersburgo
+66,875947,Román Vega,Left-Back,01/01/2004,22,Argentina,1.77,left,03/07/2025,30/06/2030,5000000.0,https://www.transfermarkt.com/roman-vega/profil/spieler/875947,964,zenit-sao-petersburgo
+51,1109229,Vadim Shilov,Right Winger,15/03/2008,18,Russia,1.74,left,,30/06/2031,800000.0,https://www.transfermarkt.com/vadim-shilov/profil/spieler/1109229,964,zenit-sao-petersburgo
+6,371856,Vanja Drkusic,Centre-Back,30/10/1999,26,Slovenia,1.86,right,13/08/2024,30/06/2029,4000000.0,https://www.transfermarkt.com/vanja-drkusic/profil/spieler/371856,964,zenit-sao-petersburgo
+15,170620,Vyacheslav Karavaev,Right-Back,20/05/1995,30,Russia,1.75,right,02/09/2019,30/06/2026,2500000.0,https://www.transfermarkt.com/vyacheslav-karavaev/profil/spieler/170620,964,zenit-sao-petersburgo
+8,499721,Wendel,Central Midfield,28/08/1997,28,Brazil,1.8,right,06/10/2020,30/06/2029,15000000.0,https://www.transfermarkt.com/wendel/profil/spieler/499721,964,zenit-sao-petersburgo
+5,257668,Wilmar Barrios,Defensive Midfield,16/10/1993,32,Colombia,1.78,right,01/02/2019,30/06/2027,7000000.0,https://www.transfermarkt.com/wilmar-barrios/profil/spieler/257668,964,zenit-sao-petersburgo
+18,701937,Yaroslav Mikhailov,Central Midfield,28/04/2003,22,Russia,1.82,left,13/09/2023,30/06/2027,800000.0,https://www.transfermarkt.com/yaroslav-mikhailov/profil/spieler/701937,964,zenit-sao-petersburgo
+4,448983,Yuriy Gorshkov,Left-Back,13/03/1999,27,Russia,1.74,left,01/07/2024,30/06/2027,1800000.0,https://www.transfermarkt.com/yuriy-gorshkov/profil/spieler/448983,964,zenit-sao-petersburgo
