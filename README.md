@@ -1,23 +1,29 @@
 # bonus_tracker
 
-Local Python project for working with contract terms and RPL parsing scripts.
+Local Python project for working with contract terms, player stats, and parser scripts.
 
-## Main files
+## Structure
 
-- `app/`: minimal backend API
-- `contract_terms/`: contract bonus logic
+- `app/api/`: FastAPI app factory and routes
+- `app/domain/`: core business entities and rules
+- `app/repositories/`: database query layer
+- `app/services/`: bonus and response assembly logic
+- `app/loaders/`: CSV-to-Postgres import modules
+- `app/`: compatibility entry points for existing commands
 - `db/schema.sql`: PostgreSQL schema
-- `parsers/rpl/`: scraping and cleaning scripts
+- `parsers/rpl/`: parser scripts and experiments
 - `requirements.txt`: Python dependencies
 
-## Run locally
+## Load data
 
-Create or activate a Python environment, install dependencies, then run the scripts you need:
+Create or activate a Python environment, install dependencies, then run the loaders you need:
 
 ```bash
 pip install -r requirements.txt
-python parsers/rpl/parser_rpl.py
-python parsers/rpl/parser_rpl_club_stats.py
+python -m app.loaders.clubs
+python -m app.loaders.players
+python -m app.loaders.player_stats
+python -m app.loaders.contract_terms
 ```
 
 ## Run backend
@@ -25,7 +31,7 @@ python parsers/rpl/parser_rpl_club_stats.py
 Start the API with:
 
 ```bash
-uvicorn app.main:app --reload
+uvicorn app.api.app:app --reload
 ```
 
 Available endpoints:
@@ -43,7 +49,7 @@ Available endpoints:
 Start the backend first, then run Dash:
 
 ```bash
-python -m app.dash_ui
+python -m app.ui.dash_app
 ```
 
 Open:
@@ -51,3 +57,7 @@ Open:
 ```text
 http://127.0.0.1:8050/
 ```
+
+## Parsers
+
+Parser scripts remain under `parsers/rpl/` and are intentionally separate from the application package because they are source-specific ingestion experiments rather than core app modules.

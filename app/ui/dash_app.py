@@ -1,24 +1,9 @@
-import os
-
 import dash
-import requests
 from dash import Input, Output, dash_table, dcc, html
-API_BASE_URL = os.getenv("BONUS_TRACKER_API_URL", "http://127.0.0.1:8000")
+
+from app.ui.api_client import load_dataset, load_player_detail
 
 app = dash.Dash(__name__, title="bonus_tracker")
-
-
-def fetch_json(path: str):
-    response = requests.get(f"{API_BASE_URL}{path}", timeout=30)
-    response.raise_for_status()
-    return response.json()
-
-
-def load_dataset():
-    clubs = fetch_json("/api/clubs")["items"]
-    players = fetch_json("/api/players?limit=2000")["items"]
-    return clubs, players
-
 
 app.layout = html.Div(
     [
@@ -122,8 +107,7 @@ def bootstrap(_):
 def player_options(data, club_filter):
     if not data or not club_filter:
         return {"display": "none"}, [], None
-    players = data["players"]
-    players = [row for row in players if row.get("club_slug") == club_filter]
+    players = [row for row in data["players"] if row.get("club_slug") == club_filter]
     options = [
         {"label": row.get("player_name") or f"Player {row.get('id')}", "value": row.get("id")}
         for row in players
@@ -135,10 +119,10 @@ def player_options(data, club_filter):
     Output("player-detail-store", "data"),
     Input("player-filter", "value"),
 )
-def load_player_detail(player_id):
+def fetch_player_detail(player_id):
     if not player_id:
         return None
-    return fetch_json(f"/api/players/{player_id}")
+    return load_player_detail(player_id)
 
 
 @app.callback(
@@ -152,84 +136,37 @@ def load_player_detail(player_id):
     Input("player-detail-store", "data"),
 )
 def render_dashboard(data, club_filter, player_detail):
-    if not data:
+    if not data or not player_detail:
         return [], [], [], [], []
 
-    if not player_detail:
-        return [], [], [], [], []
-
-    detail_children = []
-    stats_rows = []
-    contract_terms_children = []
-    bonus_children = []
     player = player_detail["player"]
     detail_children = [
         html.Div(
             [
-                html.Div("Player", className="summary-label"),
-                html.Div(player.get("player_name") or "", className="summary-value"),
+                html.Div(label, className="summary-label"),
+                html.Div(value, className="summary-value"),
             ],
             className="summary-card",
-        ),
-        html.Div(
-            [
-                html.Div("Club", className="summary-label"),
-                html.Div(player.get("club_slug") or "-", className="summary-value"),
-            ],
-            className="summary-card",
-        ),
-        html.Div(
-            [
-                html.Div("Position", className="summary-label"),
-                html.Div(player.get("position") or "-", className="summary-value"),
-            ],
-            className="summary-card",
-        ),
-        html.Div(
-            [
-                html.Div("Nationality", className="summary-label"),
-                html.Div(player.get("nationality") or "-", className="summary-value"),
-            ],
-            className="summary-card",
-        ),
-        html.Div(
-            [
-                html.Div("Date of Birth", className="summary-label"),
-                html.Div(player.get("date_of_birth") or "-", className="summary-value"),
-            ],
-            className="summary-card",
-        ),
-        html.Div(
-            [
-                html.Div("Height (m)", className="summary-label"),
-                html.Div(player.get("height_m") or "-", className="summary-value"),
-            ],
-            className="summary-card",
-        ),
-        html.Div(
-            [
-                html.Div("Foot", className="summary-label"),
-                html.Div(player.get("foot") or "-", className="summary-value"),
-            ],
-            className="summary-card",
-        ),
-        html.Div(
-            [
-                html.Div("Market Value EUR", className="summary-label"),
-                html.Div(player.get("market_value_eur") or "-", className="summary-value"),
-            ],
-            className="summary-card",
-        ),
+        )
+        for label, value in (
+            ("Player", player.get("player_name") or ""),
+            ("Club", player.get("club_slug") or "-"),
+            ("Position", player.get("position") or "-"),
+            ("Nationality", player.get("nationality") or "-"),
+            ("Date of Birth", player.get("date_of_birth") or "-"),
+            ("Height (m)", player.get("height_m") or "-"),
+            ("Foot", player.get("foot") or "-"),
+            ("Market Value EUR", player.get("market_value_eur") or "-"),
+        )
     ]
-    stats_rows = player_detail["stats"]
+
+    contract_terms_children = []
+    bonus_children = []
     for contract in player_detail["contracts"]:
         contract_terms_children.append(
             html.Div(
                 [
-                    html.Div(
-                        f"Club: {contract.get('club_slug') or '-'}",
-                        className="summary-label",
-                    ),
+                    html.Div(f"Club: {contract.get('club_slug') or '-'}", className="summary-label"),
                     html.Div(
                         f"Base salary: {contract.get('base_salary') or '-'} RUB per month",
                         className="summary-value",
@@ -242,30 +179,21 @@ def render_dashboard(data, club_filter, player_detail):
                 className="summary-card",
             )
         )
+
         for bonus in contract.get("bonuses", []):
             conditions = []
-            if bonus.get("games"):
-                conditions.append(f"games >= {bonus['games']}")
-            if bonus.get("minutes"):
-                conditions.append(f"minutes >= {bonus['minutes']}")
-            if bonus.get("goals"):
-                conditions.append(f"goals >= {bonus['goals']}")
-            if bonus.get("assists"):
-                conditions.append(f"assists >= {bonus['assists']}")
+            for key in ("games", "starts", "full_games", "minutes", "goals", "assists"):
+                value = bonus.get(key)
+                if value:
+                    conditions.append(f"{key} >= {value}")
             if not conditions:
                 conditions.append("no threshold")
 
             bonus_children.append(
                 html.Div(
                     [
-                        html.Div(
-                            f"Contract #{contract.get('id')}",
-                            className="summary-label",
-                        ),
-                        html.Div(
-                            f"Type: {bonus.get('bonus_type') or '-'}",
-                            className="summary-value",
-                        ),
+                        html.Div(f"Contract #{contract.get('id')}", className="summary-label"),
+                        html.Div(f"Type: {bonus.get('bonus_type') or '-'}", className="summary-value"),
                         html.Div(
                             f"Competition: {bonus.get('competition') or '-'}",
                             className="summary-value",
@@ -302,6 +230,8 @@ def render_dashboard(data, club_filter, player_detail):
     stats_columns = [
         {"name": "Season", "id": "season"},
         {"name": "Apps", "id": "appearances"},
+        {"name": "Starts", "id": "starts"},
+        {"name": "Full Games", "id": "full_games"},
         {"name": "Goals", "id": "goals"},
         {"name": "Assists", "id": "assists"},
         {"name": "Minutes", "id": "minutes_played"},
@@ -310,7 +240,7 @@ def render_dashboard(data, club_filter, player_detail):
 
     return (
         detail_children,
-        stats_rows,
+        player_detail["stats"],
         stats_columns,
         contract_terms_children,
         bonus_children,
