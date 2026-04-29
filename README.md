@@ -35,11 +35,16 @@ Available endpoints:
 
 - `GET /` API root
 - `GET /health`
-- `GET /api/summary`
-- `GET /api/clubs`
-- `GET /api/players?limit=50`
-- `GET /api/stats?limit=50`
-- `GET /api/contracts/spartak`
+- `GET /api/competitions`
+- `GET /api/competitions/{competition_id}/clubs`
+- `GET /api/clubs/{club_id}/players`
+- `GET /api/players/{player_id}`
+- `GET /api/players/{player_id}/stats`
+- `GET /api/players/{player_id}/contract`
+- `GET /api/contracts/{contract_id}/bonuses`
+- `GET /api/bonuses/{bonus_id}/conditions`
+- `GET /api/auth/by-email`
+- `POST /api/auth/{user_id}/touch-login`
 
 ## Streamlit login
 
@@ -71,6 +76,26 @@ pip install -r requirements.txt
 ```bash
 streamlit run app/frontend/streamlit_app.py
 ```
+
+## Deploy on Render
+
+This repo includes [render.yaml](/Users/timurkambachekov/Desktop/bonus_tracker/render.yaml:1) for the backend API and a Render Postgres database.
+
+Backend service:
+- runtime: Python
+- start command:
+
+```bash
+python -m app.backend.scripts.bootstrap_db && uvicorn app.backend.api.app:app --host 0.0.0.0 --port ${PORT:-10000}
+```
+
+Database:
+- Render injects `DATABASE_URL`
+- backend now prefers `DATABASE_URL` automatically
+
+Notes:
+- `bootstrap_db` initializes `db/schema.sql` only when the database is empty
+- loaders and data seeding are still separate; the Render bootstrap only creates schema
 
 ## Parsers
 

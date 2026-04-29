@@ -190,7 +190,6 @@ def list_bonuses_by_contract(contract_id: int):
         SELECT
             contract_bonuses.id,
             contract_bonuses.contract_id,
-            contract_bonuses.clause_key,
             contract_bonuses.bonus_type,
             contract_bonuses.competition_id,
             competitions.transfermarkt_code AS competition_code,

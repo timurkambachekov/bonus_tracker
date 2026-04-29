@@ -118,7 +118,6 @@ CREATE TABLE contract_bonuses (
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     CHECK (bonus_type IN ('seasonal', 'one_time', 'repeatable')),
     CHECK (condition_operator IN ('and', 'or')),
-    UNIQUE (contract_id, clause_key),
     UNIQUE (contract_id, display_order)
 );
 
