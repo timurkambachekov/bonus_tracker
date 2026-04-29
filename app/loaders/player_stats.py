@@ -3,7 +3,7 @@ import re
 import requests
 from bs4 import BeautifulSoup
 
-from app.db import get_connection
+from app.backend.db import get_connection
 from app.loaders.common import parse_float, parse_int
 
 BASE = "https://www.transfermarkt.com"

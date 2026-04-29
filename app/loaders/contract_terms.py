@@ -1,7 +1,7 @@
 from datetime import date
 import random
 
-from app.db import get_connection
+from app.backend.db import get_connection
 
 DEFAULT_CONTRACT_START_MONTH = 7
 DEFAULT_CONTRACT_START_DAY = 1

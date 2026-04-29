@@ -6,7 +6,7 @@
       "type": "python",
       "request": "launch",
       "module": "streamlit",
-      "args": ["run", "app/ui/streamlit_app.py"],
+      "args": ["run", "app/frontend/streamlit_app.py"],
       "cwd": "${workspaceFolder}",
       "env": {
         "PYTHONPATH": "${workspaceFolder}"

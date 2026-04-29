@@ -6,7 +6,7 @@ from typing import Optional
 import requests
 from bs4 import BeautifulSoup
 
-from app.db import get_connection
+from app.backend.db import get_connection
 
 BASE = "https://www.transfermarkt.com"
 HEADERS = {

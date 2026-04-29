@@ -4,12 +4,9 @@ Local Python project for working with contract terms, player stats, and parser s
 
 ## Structure
 
-- `app/api/`: FastAPI app factory and routes
-- `app/domain/`: core business entities and rules
-- `app/repositories/`: database query layer
-- `app/services/`: bonus and response assembly logic
+- `app/backend/`: backend API, repositories, services, domain, and DB helpers
+- `app/frontend/`: Streamlit UI, auth gate, API client, and presentation helpers
 - `app/loaders/`: CSV-to-Postgres import modules
-- `app/`: compatibility entry points for existing commands
 - `db/schema.sql`: PostgreSQL schema
 - `parsers/rpl/`: parser scripts and experiments
 - `requirements.txt`: Python dependencies
@@ -31,7 +28,7 @@ python -m app.loaders.contract_terms
 Start the API with:
 
 ```bash
-uvicorn app.api.app:app --reload
+uvicorn app.backend.api.app:app --reload
 ```
 
 Available endpoints:
@@ -43,20 +40,6 @@ Available endpoints:
 - `GET /api/players?limit=50`
 - `GET /api/stats?limit=50`
 - `GET /api/contracts/spartak`
-
-## Run Dash UI
-
-Start the backend first, then run Dash:
-
-```bash
-python -m app.ui.dash_app
-```
-
-Open:
-
-```text
-http://127.0.0.1:8050/
-```
 
 ## Streamlit login
 
@@ -86,7 +69,7 @@ pip install -r requirements.txt
 6. Run:
 
 ```bash
-streamlit run app/ui/streamlit_app.py
+streamlit run app/frontend/streamlit_app.py
 ```
 
 ## Parsers

@@ -1,6 +1,6 @@
 import argparse
 
-from app.repositories.users import replace_user_clubs, upsert_app_user
+from app.backend.repositories.users import replace_user_clubs, upsert_app_user
 
 
 def parse_args():
