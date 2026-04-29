@@ -193,12 +193,15 @@ def list_bonuses_by_contract(contract_id: int):
             contract_bonuses.clause_key,
             contract_bonuses.bonus_type,
             contract_bonuses.competition_id,
+            competitions.transfermarkt_code AS competition_code,
+            competitions.name AS competition_name,
             contract_bonus_binding_groups.group_name AS binding_group,
             contract_bonuses.condition_operator,
             contract_bonuses.bonus_value,
             contract_bonuses.display_order,
             contract_bonuses.created_at
         FROM contract_bonuses
+        LEFT JOIN competitions ON competitions.id = contract_bonuses.competition_id
         LEFT JOIN contract_bonus_binding_group_members
             ON contract_bonus_binding_group_members.contract_bonus_id = contract_bonuses.id
         LEFT JOIN contract_bonus_binding_groups

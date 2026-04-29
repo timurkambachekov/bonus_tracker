@@ -6,8 +6,29 @@ from app.ui.charts import group_conditions_by_type, render_condition_number_line
 from app.ui.formatters import build_stats_row, format_bonus_title, format_money
 
 
-def render_filters():
+def render_filters(app_user):
+    if not app_user["is_admin"] and len(app_user["club_ids"]) == 1:
+        club_players = load_players(app_user["club_ids"][0])
+        if not club_players:
+            st.info("No players available for your club.")
+            return None
+        return st.selectbox(
+            "Player",
+            [None] + club_players,
+            format_func=lambda item: "Choose a player" if item is None else item.name,
+        )
+
     competitions = load_competitions()
+    if not app_user["is_admin"]:
+        competitions = [
+            competition
+            for competition in competitions
+            if competition.id in app_user["competition_ids"]
+        ]
+    if not competitions:
+        st.info("No authorized competitions.")
+        return None
+
     selected_competition = st.selectbox(
         "League",
         [None] + competitions,
@@ -17,6 +38,12 @@ def render_filters():
         return None
 
     clubs = load_clubs(selected_competition.id)
+    if not app_user["is_admin"]:
+        clubs = [club for club in clubs if club.id in app_user["club_ids"]]
+    if not clubs:
+        st.info("No authorized clubs in this competition.")
+        return None
+
     selected_club = st.selectbox(
         "Club",
         [None] + clubs,
@@ -87,7 +114,7 @@ def render_bonus_card(index, bonus, stats):
         with header_cols[0]:
             st.metric("Payout", format_money(bonus.payout))
         with header_cols[1]:
-            st.metric("Competition", bonus.competition.value)
+            st.metric("Competition", bonus.competition_name or bonus.competition.value)
         with header_cols[2]:
             if progress:
                 st.metric("Current Payout", format_money(progress["payout_value"]))

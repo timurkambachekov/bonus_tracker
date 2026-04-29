@@ -58,6 +58,37 @@ Open:
 http://127.0.0.1:8050/
 ```
 
+## Streamlit login
+
+The Streamlit app uses built-in OIDC login, and access is limited by club assignments.
+
+1. Copy `.streamlit/secrets.example.toml` to `.streamlit/secrets.toml`
+2. Fill in your provider values inside `[auth]`
+3. Apply the schema so `app_users` and `app_user_clubs` exist
+4. Add a user and assign allowed clubs:
+
+```bash
+python -m app.loaders.app_users --email rep@example.com --name "Club Rep" --role club_rep --club-id 13
+```
+
+Admins can be created without club assignments:
+
+```bash
+python -m app.loaders.app_users --email admin@example.com --name "Admin" --role admin
+```
+
+5. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+6. Run:
+
+```bash
+streamlit run app/ui/streamlit_app.py
+```
+
 ## Parsers
 
 Parser scripts remain under `parsers/rpl/` and are intentionally separate from the application package because they are source-specific ingestion experiments rather than core app modules.

@@ -27,6 +27,12 @@ def fetch_json(path: str):
     return response.json()
 
 
+def post_json(path: str):
+    response = requests.post(f"{API_BASE_URL}{path}", timeout=30)
+    response.raise_for_status()
+    return response.json()
+
+
 def build_competition(data: dict) -> Competition:
     return Competition(
         id=data["id"],
@@ -82,6 +88,7 @@ def build_bonus(data: dict, conditions: Optional[list] = None) -> Bonus:
         competition=BonusCompetition(competition_code),
         payout=float(data.get("bonus_value") or 0),
         conditions=conditions or [],
+        competition_name=data.get("competition_name"),
         binding_group=data.get("binding_group"),
         operator=ConditionOperator(data.get("condition_operator") or "and"),
     )
@@ -153,3 +160,19 @@ def load_contract_bonuses(contract_id: int):
     for bonus in bonuses:
         bonus.conditions = load_conditions(bonus.id)
     return bonuses
+
+
+def load_app_user(email: str):
+    response = requests.get(
+        f"{API_BASE_URL}/api/auth/by-email",
+        params={"email": email},
+        timeout=30,
+    )
+    if response.status_code == 404:
+        return None
+    response.raise_for_status()
+    return response.json()
+
+
+def touch_app_user_login(user_id: int):
+    return post_json(f"/api/auth/{user_id}/touch-login")

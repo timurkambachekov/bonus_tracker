@@ -17,6 +17,7 @@ class Bonus:
     competition: BonusCompetition
     payout: float
     conditions: list[Condition]
+    competition_name: Optional[str] = None
     binding_group: Optional[str] = None
     operator: ConditionOperator = ConditionOperator.AND
 

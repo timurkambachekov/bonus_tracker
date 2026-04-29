@@ -37,6 +37,30 @@ CREATE TABLE players (
 CREATE INDEX idx_players_club_id ON players(club_id);
 
 
+CREATE TABLE app_users (
+    id BIGSERIAL PRIMARY KEY,
+    email TEXT NOT NULL UNIQUE,
+    full_name TEXT,
+    role TEXT NOT NULL DEFAULT 'viewer',
+    is_active BOOLEAN NOT NULL DEFAULT TRUE,
+    last_login_at TIMESTAMPTZ,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    CHECK (role IN ('viewer', 'club_rep', 'admin'))
+);
+
+CREATE INDEX idx_app_users_email ON app_users(email);
+
+
+CREATE TABLE app_user_clubs (
+    user_id BIGINT NOT NULL REFERENCES app_users(id) ON DELETE CASCADE,
+    club_id BIGINT NOT NULL REFERENCES clubs(id) ON DELETE CASCADE,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    PRIMARY KEY (user_id, club_id)
+);
+
+CREATE INDEX idx_app_user_clubs_club_id ON app_user_clubs(club_id);
+
+
 CREATE TABLE player_season_stats (
     id BIGSERIAL PRIMARY KEY,
     player_id BIGINT NOT NULL REFERENCES players(id) ON DELETE CASCADE,

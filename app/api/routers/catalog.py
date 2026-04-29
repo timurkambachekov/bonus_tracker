@@ -4,8 +4,8 @@ from app.repositories.catalog import (
     fetch_active_contract_by_player,
     fetch_latest_stats_by_player,
     fetch_player_by_id,
-    list_clubs_by_competition,
     list_bonuses_by_contract,
+    list_clubs_by_competition,
     list_competitions,
     list_conditions_by_bonus,
     list_players_by_club,
@@ -17,11 +17,6 @@ router = APIRouter()
 
 def list_response(items):
     return {"items": items, "count": len(items)}
-
-
-@router.get("/")
-def root():
-    return {"message": "bonus_tracker API"}
 
 
 @router.get("/api/competitions")

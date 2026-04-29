@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from app.api.routes import router
+from app.api.routers import routers
 
 
 def create_app() -> FastAPI:
@@ -12,7 +12,8 @@ def create_app() -> FastAPI:
         redoc_url="/redoc",
         openapi_url="/openapi.json",
     )
-    application.include_router(router)
+    for router in routers:
+        application.include_router(router)
     return application
 
 

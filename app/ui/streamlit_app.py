@@ -7,6 +7,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
+from app.ui.auth import render_user_session, require_login
 from app.ui.page_data import load_player_page_data
 from app.ui.sections import (
     render_bonuses,
@@ -19,9 +20,11 @@ from app.ui.sections import (
 
 def main():
     st.set_page_config(page_title="bonus_tracker", layout="wide")
+    user = require_login()
+    render_user_session(user)
     st.title("Bonus Tracker")
 
-    selected_player = render_filters()
+    selected_player = render_filters(user)
     if not selected_player:
         return
 
