@@ -31,6 +31,8 @@ class ConditionType(str, Enum):
     ASSISTS = "assists"
     GOAL_CONTRIBUTIONS = "goal_contributions"
     MINUTES_PLAYED = "minutes_played"
+    SQUAD_INCLUSIONS = "squad_inclusions"
+    APPEARANCES = "appearances"
     GAMES_PLAYED = "games_played"
     STARTS = "starts"
     FULL_GAMES = "full_games"

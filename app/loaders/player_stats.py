@@ -199,8 +199,8 @@ def store_stats(cursor, row: dict) -> None:
     appearances = row["appearances"]
     substitutions_on = row["substitutions_on"]
     substitutions_off = row["substitutions_off"]
-    starts = derive_count(appearances, substitutions_on)
-    full_games = derive_count(appearances, substitutions_off)
+    starts = int(appearances) - int(substitutions_on)
+    full_games = int(starts) - int(substitutions_off)
 
     cursor.execute(
         """

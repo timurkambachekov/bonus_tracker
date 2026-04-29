@@ -1,3 +1,3 @@
-from app.services.bonus_logic import evaluate_bonus_progress
+from app.services.bonus_logic import calculate_bonus_progress, evaluate_bonus_progress
 
-__all__ = ["evaluate_bonus_progress"]
+__all__ = ["calculate_bonus_progress", "evaluate_bonus_progress"]

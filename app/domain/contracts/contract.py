@@ -14,26 +14,21 @@ class Contract:
     end_date: str
     base_salary: float
     bonuses: list[Bonus] = field(default_factory=list)
-    binding_bonus_groups: list[list[Bonus]] = field(default_factory=list)
     contract_text: str = ""
 
     def earned_bonuses(self, stats: dict[str, float | int]) -> list[Bonus]:
         earned = [bonus for bonus in self.bonuses if bonus.is_earned(stats)]
-        if not self.binding_bonus_groups:
-            return earned
-
         resolved: list[Bonus] = []
-        bound_bonus_ids = set()
-
-        for group in self.binding_bonus_groups:
-            earned_group = [bonus for bonus in group if bonus in earned]
-            bound_bonus_ids.update(bonus.id for bonus in group)
-            if earned_group:
-                resolved.append(max(earned_group, key=lambda bonus: bonus.payout))
+        grouped: dict[str, list[Bonus]] = {}
 
         for bonus in earned:
-            if bonus.id not in bound_bonus_ids:
+            if bonus.binding_group:
+                grouped.setdefault(bonus.binding_group, []).append(bonus)
+            else:
                 resolved.append(bonus)
+
+        for group in grouped.values():
+            resolved.append(max(group, key=lambda bonus: bonus.payout))
 
         return resolved
 

@@ -86,7 +86,6 @@ CREATE INDEX idx_contracts_club_id ON contracts(club_id);
 CREATE TABLE contract_bonuses (
     id BIGSERIAL PRIMARY KEY,
     contract_id BIGINT NOT NULL REFERENCES contracts(id) ON DELETE CASCADE,
-    clause_key TEXT,
     bonus_type TEXT NOT NULL,
     competition_id BIGINT NOT NULL REFERENCES competitions(id),
     condition_operator TEXT NOT NULL DEFAULT 'and',
@@ -116,6 +115,8 @@ CREATE TABLE contract_bonus_conditions (
             'assists',
             'goal_contributions',
             'minutes_played',
+            'squad_inclusions',
+            'appearances',
             'games_played',
             'starts',
             'full_games',

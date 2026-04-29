@@ -1,7 +1,7 @@
 from __future__ import annotations
 
-from dataclasses import dataclass, field
-from typing import Union
+from dataclasses import dataclass
+from typing import Optional, Union
 
 from app.domain.contracts.condition import Condition
 from app.domain.contracts.enums import BonusCompetition, BonusType, ConditionOperator
@@ -17,6 +17,7 @@ class Bonus:
     competition: BonusCompetition
     payout: float
     conditions: list[Condition]
+    binding_group: Optional[str] = None
     operator: ConditionOperator = ConditionOperator.AND
 
     def is_earned(self, stats: Stats) -> bool:
