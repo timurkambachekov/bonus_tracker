@@ -79,7 +79,10 @@ streamlit run app/frontend/streamlit_app.py
 
 ## Deploy on Render
 
-This repo includes [render.yaml](/Users/timurkambachekov/Desktop/bonus_tracker/render.yaml:1) for the backend API and a Render Postgres database.
+This repo includes [render.yaml](/Users/timurkambachekov/Desktop/bonus_tracker/render.yaml:1) for:
+- backend API
+- Streamlit frontend
+- Render Postgres database
 
 Backend service:
 - runtime: Python
@@ -93,9 +96,28 @@ Database:
 - Render injects `DATABASE_URL`
 - backend now prefers `DATABASE_URL` automatically
 
+Frontend service:
+- runtime: Python
+- start command:
+
+```bash
+python -m app.frontend.scripts.bootstrap_streamlit_secrets && streamlit run app/frontend/streamlit_app.py --server.address 0.0.0.0 --server.port ${PORT:-10000}
+```
+
+Frontend env vars:
+- `BONUS_TRACKER_API_URL` comes from the backend service URL
+- `STREAMLIT_AUTH_COOKIE_SECRET` is auto-generated
+- `STREAMLIT_AUTH_CLIENT_ID` must be provided
+- `STREAMLIT_AUTH_CLIENT_SECRET` must be provided
+- `STREAMLIT_AUTH_SERVER_METADATA_URL` defaults to Google OIDC
+
+The frontend bootstrap script writes `.streamlit/secrets.toml` at runtime from these Render env vars, including:
+- `redirect_uri = ${RENDER_EXTERNAL_URL}/oauth2callback`
+
 Notes:
 - `bootstrap_db` initializes `db/schema.sql` only when the database is empty
 - loaders and data seeding are still separate; the Render bootstrap only creates schema
+- after the frontend service URL exists, register `https://your-frontend-url.onrender.com/oauth2callback` with your OIDC provider if required
 
 ## Parsers
 

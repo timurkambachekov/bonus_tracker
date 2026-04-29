@@ -9,6 +9,25 @@ services:
         fromDatabase:
           name: bonus-tracker-db
           property: connectionString
+  - type: web
+    name: bonus-tracker-frontend
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: bash -lc "python -m app.frontend.scripts.bootstrap_streamlit_secrets && streamlit run app/frontend/streamlit_app.py --server.address 0.0.0.0 --server.port ${PORT:-10000}"
+    envVars:
+      - key: BONUS_TRACKER_API_URL
+        fromService:
+          type: web
+          name: bonus-tracker-api
+          envVarKey: RENDER_EXTERNAL_URL
+      - key: STREAMLIT_AUTH_COOKIE_SECRET
+        generateValue: true
+      - key: STREAMLIT_AUTH_CLIENT_ID
+        sync: false
+      - key: STREAMLIT_AUTH_CLIENT_SECRET
+        sync: false
+      - key: STREAMLIT_AUTH_SERVER_METADATA_URL
+        value: https://accounts.google.com/.well-known/openid-configuration
 
 databases:
   - name: bonus-tracker-db
