@@ -17,6 +17,7 @@ def format_bonus_title(index, bonus):
 def build_stats_row(stats):
     return {
         "Season": stats.get("season"),
+        "Competition ID": stats.get("competition_id"),
         "Squad Inclusions": stats.get("squad_inclusions"),
         "Appearances": stats.get("appearances"),
         "Starts": stats.get("starts"),

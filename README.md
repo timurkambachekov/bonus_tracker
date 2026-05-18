@@ -23,6 +23,22 @@ python -m app.loaders.player_stats
 python -m app.loaders.contract_terms
 ```
 
+Competition-aware examples:
+
+```bash
+python -m app.loaders.clubs --competition rpl --season 2025
+python -m app.loaders.clubs --competition russian-cup --competition fnl --season 2025
+python -m app.loaders.players --competition russian-cup --season 2025
+python -m app.loaders.player_stats --competition fnl --season 2025
+python -m app.loaders.contract_terms --competition rpl --season 2025
+```
+
+Supported competition presets:
+- `rpl`
+- `russian-cup`
+- `fnl`
+- `second-league-a`
+
 ## Run backend
 
 Start the API with:
@@ -30,6 +46,43 @@ Start the API with:
 ```bash
 uvicorn app.backend.api.app:app --reload
 ```
+
+## Local development
+
+Use local processes for normal app changes and keep Render as the deployed environment.
+
+1. Start Postgres locally or point `DATABASE_URL` at a dev database.
+2. Run the backend:
+
+```bash
+uvicorn app.backend.api.app:app --reload
+```
+
+3. In another terminal, run the frontend:
+
+```bash
+streamlit run app/frontend/streamlit_app.py
+```
+
+Local defaults:
+- the frontend uses `http://127.0.0.1:8000` by default when `BONUS_TRACKER_API_URL` is unset
+- local Streamlit auth should use `.streamlit/secrets.toml`
+
+Recommended local `.streamlit/secrets.toml`:
+
+```toml
+[auth]
+redirect_uri = "http://localhost:8501/oauth2callback"
+cookie_secret = "replace-with-a-local-secret"
+client_id = "your-google-client-id"
+client_secret = "your-google-client-secret"
+server_metadata_url = "https://accounts.google.com/.well-known/openid-configuration"
+```
+
+Notes:
+- do not set `BONUS_TRACKER_API_URL` locally unless you intentionally want the frontend to call the deployed API
+- no changes to `render.yaml` are required for local development
+- only push to Render when you want to test a deployment
 
 Available endpoints:
 

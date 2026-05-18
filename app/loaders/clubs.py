@@ -1,19 +1,13 @@
+import argparse
 import re
 
 import requests
 from bs4 import BeautifulSoup
 
 from app.backend.db import get_connection
+from app.loaders.competitions import add_competition_arguments, build_selected_competitions
 
 BASE = "https://www.transfermarkt.com"
-COMPETITIONS = [
-    {
-        "code": "RU1",
-        "slug": "premier-liga",
-        "country": "Russia",
-        "season": 2025,
-    },
-]
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) "
@@ -116,20 +110,35 @@ def load_competition_clubs(cursor, competition: dict) -> int:
             INSERT INTO clubs (
                 transfermarkt_club_id,
                 club_slug,
-                club_name,
-                competition_id
+                club_name
             )
-            VALUES (%s, %s, %s, %s)
+            VALUES (%s, %s, %s)
             ON CONFLICT (transfermarkt_club_id) DO UPDATE
             SET club_slug = EXCLUDED.club_slug,
-                club_name = EXCLUDED.club_name,
-                competition_id = EXCLUDED.competition_id;
+                club_name = EXCLUDED.club_name
+            RETURNING id;
             """,
             (
                 club["club_id"],
                 club["club_slug"],
                 club["club_name"],
+            ),
+        )
+        club_row = cursor.fetchone()
+        cursor.execute(
+            """
+            INSERT INTO club_competitions (
+                club_id,
                 competition_id,
+                season
+            )
+            VALUES (%s, %s, %s)
+            ON CONFLICT (club_id, competition_id, season) DO NOTHING;
+            """,
+            (
+                club_row["id"],
+                competition_id,
+                payload["season"],
             ),
         )
 
@@ -141,11 +150,15 @@ def load_competition_clubs(cursor, competition: dict) -> int:
 
 
 def load_clubs() -> None:
+    load_clubs_for_competitions(build_selected_competitions([], season=2025))
+
+
+def load_clubs_for_competitions(competitions: list[dict]) -> None:
     total_clubs = 0
 
     with get_connection() as connection:
         with connection.cursor() as cursor:
-            for competition in COMPETITIONS:
+            for competition in competitions:
                 total_clubs += load_competition_clubs(
                     cursor,
                     competition=competition,
@@ -153,11 +166,20 @@ def load_clubs() -> None:
 
         connection.commit()
 
-    print(f"Processed {total_clubs} clubs across {len(COMPETITIONS)} competitions")
+    print(f"Processed {total_clubs} clubs across {len(competitions)} competitions")
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(description="Load clubs for one or more Transfermarkt competitions.")
+    add_competition_arguments(parser)
+    return parser.parse_args()
 
 
 def main():
-    load_clubs()
+    args = parse_args()
+    load_clubs_for_competitions(
+        build_selected_competitions(args.competition, season=args.season)
+    )
 
 
 if __name__ == "__main__":

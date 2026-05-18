@@ -13,11 +13,19 @@ CREATE TABLE clubs (
     transfermarkt_club_id INTEGER UNIQUE,
     club_slug TEXT UNIQUE,
     club_name TEXT NOT NULL,
-    competition_id BIGINT REFERENCES competitions(id),
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
-CREATE INDEX idx_clubs_competition_id ON clubs(competition_id);
+CREATE TABLE club_competitions (
+    club_id BIGINT NOT NULL REFERENCES clubs(id) ON DELETE CASCADE,
+    competition_id BIGINT NOT NULL REFERENCES competitions(id) ON DELETE CASCADE,
+    season INTEGER NOT NULL,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    PRIMARY KEY (club_id, competition_id, season)
+);
+
+CREATE INDEX idx_club_competitions_competition_id ON club_competitions(competition_id);
+CREATE INDEX idx_club_competitions_season ON club_competitions(season);
 
 
 CREATE TABLE players (
@@ -30,11 +38,19 @@ CREATE TABLE players (
     height_m NUMERIC(4,2),
     foot TEXT,
     market_value_eur NUMERIC(14,2),
-    club_id BIGINT REFERENCES clubs(id),
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
-CREATE INDEX idx_players_club_id ON players(club_id);
+CREATE TABLE player_clubs (
+    player_id BIGINT NOT NULL REFERENCES players(id) ON DELETE CASCADE,
+    club_id BIGINT NOT NULL REFERENCES clubs(id) ON DELETE CASCADE,
+    season INTEGER NOT NULL,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    PRIMARY KEY (player_id, club_id, season)
+);
+
+CREATE INDEX idx_player_clubs_club_id ON player_clubs(club_id);
+CREATE INDEX idx_player_clubs_season ON player_clubs(season);
 
 
 CREATE TABLE app_users (

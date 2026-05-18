@@ -1,6 +1,6 @@
 from app.backend.repositories.catalog import (
     fetch_active_contract_by_player,
-    fetch_latest_stats_by_player,
+    fetch_stats_by_player,
     fetch_player_by_id,
     list_clubs_by_competition,
     list_bonuses_by_contract,
@@ -19,7 +19,7 @@ from app.backend.repositories.users import (
 
 __all__ = [
     "fetch_active_contract_by_player",
-    "fetch_latest_stats_by_player",
+    "fetch_stats_by_player",
     "fetch_player_by_id",
     "list_competitions",
     "list_clubs_by_competition",

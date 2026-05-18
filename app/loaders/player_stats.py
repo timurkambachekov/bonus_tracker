@@ -1,10 +1,13 @@
 import re
+import argparse
+from typing import List, Optional
 
 import requests
 from bs4 import BeautifulSoup
 
 from app.backend.db import get_connection
 from app.loaders.common import parse_float, parse_int
+from app.loaders.competitions import add_competition_arguments, build_selected_competitions
 
 BASE = "https://www.transfermarkt.com"
 HEADERS = {
@@ -146,25 +149,40 @@ def parse_stats_table(club: dict) -> list[dict]:
     return stats
 
 
-def fetch_clubs(cursor) -> list[dict]:
+def fetch_clubs(cursor, competition_codes: Optional[List[str]] = None, season: Optional[int] = None) -> list[dict]:
+    params = []
+    where_clauses = [
+        "clubs.transfermarkt_club_id IS NOT NULL",
+        "clubs.club_slug IS NOT NULL",
+        "competitions.transfermarkt_code IS NOT NULL",
+        "club_competitions.season IS NOT NULL",
+    ]
+
+    if competition_codes:
+        where_clauses.append("competitions.transfermarkt_code = ANY(%s)")
+        params.append(competition_codes)
+
+    if season is not None:
+        where_clauses.append("club_competitions.season = %s")
+        params.append(season)
+
     cursor.execute(
-        """
+        f"""
         SELECT
             clubs.id,
             clubs.transfermarkt_club_id,
             clubs.club_slug,
             clubs.club_name,
-            clubs.competition_id,
+            club_competitions.competition_id,
             competitions.transfermarkt_code AS competition_code,
-            competitions.season
+            club_competitions.season
         FROM clubs
-        JOIN competitions ON competitions.id = clubs.competition_id
-        WHERE clubs.transfermarkt_club_id IS NOT NULL
-          AND clubs.club_slug IS NOT NULL
-          AND competitions.transfermarkt_code IS NOT NULL
-          AND competitions.season IS NOT NULL
+        JOIN club_competitions ON club_competitions.club_id = clubs.id
+        JOIN competitions ON competitions.id = club_competitions.competition_id
+        WHERE {' AND '.join(where_clauses)}
         ORDER BY clubs.id;
-        """
+        """,
+        params,
     )
     return cursor.fetchall()
 
@@ -177,10 +195,12 @@ def attach_club_players(cursor, clubs: list[dict]) -> list[dict]:
             """
             SELECT id, transfermarkt_player_id
             FROM players
-            WHERE club_id = %s
+            JOIN player_clubs ON player_clubs.player_id = players.id
+            WHERE player_clubs.club_id = %s
+              AND player_clubs.season = %s
               AND transfermarkt_player_id IS NOT NULL;
             """,
-            (club["id"],),
+            (club["id"], club["season"]),
         )
         player_id_map = {
             row["transfermarkt_player_id"]: row["id"]
@@ -263,13 +283,16 @@ def store_stats(cursor, row: dict) -> None:
     )
 
 
-def load_player_stats() -> None:
+def load_player_stats(competition_codes: Optional[List[str]] = None, season: Optional[int] = None) -> None:
     total_stats = 0
     skipped_clubs = 0
 
     with get_connection() as connection:
         with connection.cursor() as cursor:
-            clubs = attach_club_players(cursor, fetch_clubs(cursor))
+            clubs = attach_club_players(
+                cursor,
+                fetch_clubs(cursor, competition_codes=competition_codes, season=season),
+            )
 
             for club in clubs:
                 try:
@@ -293,8 +316,19 @@ def load_player_stats() -> None:
     )
 
 
+def parse_args():
+    parser = argparse.ArgumentParser(description="Load Transfermarkt season stats for clubs already stored in the database.")
+    add_competition_arguments(parser)
+    return parser.parse_args()
+
+
 def main():
-    load_player_stats()
+    args = parse_args()
+    competitions = build_selected_competitions(args.competition, season=args.season)
+    load_player_stats(
+        competition_codes=[competition["code"] for competition in competitions],
+        season=args.season,
+    )
 
 
 if __name__ == "__main__":

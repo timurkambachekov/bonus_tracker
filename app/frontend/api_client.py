@@ -21,8 +21,8 @@ API_BASE_URL = os.getenv("BONUS_TRACKER_API_URL", "http://127.0.0.1:8000")
 KNOWN_BONUS_COMPETITIONS = {item.value for item in BonusCompetition}
 
 
-def fetch_json(path: str):
-    response = requests.get(f"{API_BASE_URL}{path}", timeout=30)
+def fetch_json(path: str, params: Optional[dict] = None):
+    response = requests.get(f"{API_BASE_URL}{path}", params=params, timeout=30)
     response.raise_for_status()
     return response.json()
 
@@ -44,6 +44,19 @@ def build_competition(data: dict) -> Competition:
 
 
 def build_team(data: dict, competition: Optional[Competition] = None) -> Team:
+    if competition is None and (
+        data.get("competition_id")
+        or data.get("competition_name")
+        or data.get("competition_code")
+        or data.get("season")
+    ):
+        competition = Competition(
+            id=data.get("competition_id") or 0,
+            name=data.get("competition_name") or data.get("name") or "",
+            code=data.get("competition_code") or data.get("transfermarkt_code"),
+            country=data.get("competition_country") or data.get("country"),
+            season=data.get("season") or data.get("competition_season"),
+        )
     return Team(
         id=data["id"],
         name=data.get("club_name") or data.get("name") or "",
@@ -107,17 +120,20 @@ def build_contract(data: dict, bonuses: Optional[list] = None) -> Contract:
     )
 
 
-def load_competitions():
-    return [build_competition(item) for item in fetch_json("/api/competitions")["items"]]
+def load_competitions(season: Optional[int] = None):
+    params = {"season": season} if season is not None else None
+    return [build_competition(item) for item in fetch_json("/api/competitions", params=params)["items"]]
 
 
-def load_clubs(competition_id: int):
-    clubs = fetch_json(f"/api/competitions/{competition_id}/clubs")["items"]
+def load_clubs(competition_id: int, season: Optional[int] = None):
+    params = {"season": season} if season is not None else None
+    clubs = fetch_json(f"/api/competitions/{competition_id}/clubs", params=params)["items"]
     return [build_team(item) for item in clubs]
 
 
-def load_players(club_id: int):
-    players = fetch_json(f"/api/clubs/{club_id}/players")["items"]
+def load_players(club_id: int, season: Optional[int] = None):
+    params = {"season": season} if season is not None else None
+    players = fetch_json(f"/api/clubs/{club_id}/players", params=params)["items"]
     return [build_player(item) for item in players]
 
 
@@ -125,11 +141,21 @@ def load_player(player_id: int) -> Player:
     data = fetch_json(f"/api/players/{player_id}")
     team = None
     if data.get("club_id") or data.get("club_name"):
+        competition = None
+        if data.get("competition_id") or data.get("competition_name"):
+            competition = Competition(
+                id=data.get("competition_id") or 0,
+                name=data.get("competition_name") or "",
+                code=data.get("transfermarkt_code"),
+                country=data.get("competition_country"),
+                season=data.get("competition_season"),
+            )
         team = Team(
             id=data.get("club_id") or 0,
             name=data.get("club_name") or "",
             slug=data.get("club_slug"),
             transfermarkt_club_id=data.get("transfermarkt_club_id"),
+            competition=competition,
         )
     return build_player(data, team=team)
 
@@ -141,8 +167,20 @@ def load_active_contract(player_id: int):
     return build_contract(data)
 
 
-def load_player_stats(player_id: int):
-    return fetch_json(f"/api/players/{player_id}/stats")
+def load_player_stats(
+    player_id: int,
+    seasons: Optional[list[int]] = None,
+    club_id: Optional[int] = None,
+    competition_id: Optional[int] = None,
+):
+    params = {}
+    if seasons:
+        params["seasons"] = seasons
+    if club_id is not None:
+        params["club_id"] = club_id
+    if competition_id is not None:
+        params["competition_id"] = competition_id
+    return fetch_json(f"/api/players/{player_id}/stats", params=params or None)["items"]
 
 
 def load_bonuses(contract_id: int):

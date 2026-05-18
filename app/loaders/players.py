@@ -1,12 +1,14 @@
 import re
 from datetime import datetime
 from time import sleep
-from typing import Optional
+from typing import List, Optional
+import argparse
 
 import requests
 from bs4 import BeautifulSoup
 
 from app.backend.db import get_connection
+from app.loaders.competitions import add_competition_arguments, build_selected_competitions
 
 BASE = "https://www.transfermarkt.com"
 HEADERS = {
@@ -200,31 +202,46 @@ def parse_squad_page(club: dict) -> list[dict]:
     return players
 
 
-def fetch_clubs(cursor) -> list[dict]:
+def fetch_clubs(cursor, competition_codes: Optional[List[str]] = None, season: Optional[int] = None) -> list[dict]:
+    params = []
+    where_clauses = [
+        "clubs.transfermarkt_club_id IS NOT NULL",
+        "clubs.club_slug IS NOT NULL",
+        "club_competitions.season IS NOT NULL",
+    ]
+
+    if competition_codes:
+        where_clauses.append("competitions.transfermarkt_code = ANY(%s)")
+        params.append(competition_codes)
+
+    if season is not None:
+        where_clauses.append("club_competitions.season = %s")
+        params.append(season)
+
     cursor.execute(
-        """
+        f"""
         SELECT
             clubs.id,
             clubs.transfermarkt_club_id,
             clubs.club_slug,
             clubs.club_name,
-            competitions.season
+            club_competitions.season
         FROM clubs
-        JOIN competitions ON competitions.id = clubs.competition_id
-        WHERE clubs.transfermarkt_club_id IS NOT NULL
-          AND clubs.club_slug IS NOT NULL
-          AND competitions.season IS NOT NULL;
-        """
+        JOIN club_competitions ON club_competitions.club_id = clubs.id
+        JOIN competitions ON competitions.id = club_competitions.competition_id
+        WHERE {' AND '.join(where_clauses)};
+        """,
+        params,
     )
     return cursor.fetchall()
 
 
-def load_players() -> None:
+def load_players(competition_codes: Optional[List[str]] = None, season: Optional[int] = None) -> None:
     total_players = 0
 
     with get_connection() as connection:
         with connection.cursor() as cursor:
-            clubs = fetch_clubs(cursor)
+            clubs = fetch_clubs(cursor, competition_codes=competition_codes, season=season)
 
             for club in clubs:
                 players = parse_squad_page(club)
@@ -240,10 +257,9 @@ def load_players() -> None:
                             nationality,
                             height_m,
                             foot,
-                            market_value_eur,
-                            club_id
+                            market_value_eur
                         )
-                        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+                        VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
                         ON CONFLICT (transfermarkt_player_id) DO UPDATE
                         SET player_name = EXCLUDED.player_name,
                             position = EXCLUDED.position,
@@ -251,8 +267,8 @@ def load_players() -> None:
                             nationality = EXCLUDED.nationality,
                             height_m = EXCLUDED.height_m,
                             foot = EXCLUDED.foot,
-                            market_value_eur = EXCLUDED.market_value_eur,
-                            club_id = EXCLUDED.club_id;
+                            market_value_eur = EXCLUDED.market_value_eur
+                        RETURNING id;
                         """,
                         (
                             player["transfermarkt_player_id"],
@@ -263,7 +279,23 @@ def load_players() -> None:
                             player["height_m"],
                             player["foot"],
                             player["market_value_eur"],
+                        ),
+                    )
+                    player_row = cursor.fetchone()
+                    cursor.execute(
+                        """
+                        INSERT INTO player_clubs (
+                            player_id,
+                            club_id,
+                            season
+                        )
+                        VALUES (%s, %s, %s)
+                        ON CONFLICT (player_id, club_id, season) DO NOTHING;
+                        """,
+                        (
+                            player_row["id"],
                             club["id"],
+                            club["season"],
                         ),
                     )
 
@@ -275,8 +307,19 @@ def load_players() -> None:
     print(f"Processed {total_players} players across {len(clubs)} clubs")
 
 
+def parse_args():
+    parser = argparse.ArgumentParser(description="Load players for clubs already stored in the database.")
+    add_competition_arguments(parser)
+    return parser.parse_args()
+
+
 def main():
-    load_players()
+    args = parse_args()
+    competitions = build_selected_competitions(args.competition, season=args.season)
+    load_players(
+        competition_codes=[competition["code"] for competition in competitions],
+        season=args.season,
+    )
 
 
 if __name__ == "__main__":

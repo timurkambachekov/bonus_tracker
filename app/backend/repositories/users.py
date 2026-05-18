@@ -96,9 +96,17 @@ def list_user_clubs(user_id: int):
                     clubs.id,
                     clubs.club_name,
                     clubs.club_slug,
-                    clubs.competition_id
+                    club_competitions.competition_id,
+                    club_competitions.season
                 FROM app_user_clubs
                 JOIN clubs ON clubs.id = app_user_clubs.club_id
+                LEFT JOIN LATERAL (
+                    SELECT competition_id, season
+                    FROM club_competitions
+                    WHERE club_id = clubs.id
+                    ORDER BY season DESC, competition_id DESC
+                    LIMIT 1
+                ) club_competitions ON TRUE
                 WHERE app_user_clubs.user_id = %s
                 ORDER BY clubs.club_name, clubs.id;
                 """,

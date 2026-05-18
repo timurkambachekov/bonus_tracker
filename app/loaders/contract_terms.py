@@ -1,7 +1,9 @@
+import argparse
 from datetime import date
 import random
 
 from app.backend.db import get_connection
+from app.loaders.competitions import add_competition_arguments, build_selected_competitions
 
 DEFAULT_CONTRACT_START_MONTH = 7
 DEFAULT_CONTRACT_START_DAY = 1
@@ -10,7 +12,6 @@ DEFAULT_CONTRACT_END_DAY = 30
 MIN_BASE_SALARY_RUB = 300_000
 MAX_BASE_SALARY_RUB = 8_000_000
 MINUTE_BINDING_GROUP = "seasonal_minutes_ladder"
-RPL_COMPETITION_CODE = "RU1"
 
 
 def stat_value(row: dict, key: str) -> int:
@@ -115,29 +116,29 @@ def build_bonus_specs(player: dict, base_salary: int) -> list[dict]:
     return bonuses
 
 
-def build_contract_text(start_date: str, end_date: str, bonuses: list[dict]) -> str:
+def build_contract_text(start_date: str, end_date: str, competition_name: str, bonuses: list[dict]) -> str:
     clause_lines = []
 
     for bonus in bonuses:
         amount = f"{int(bonus['bonus_value']):,}".replace(",", " ")
         if bonus["bonus_category"] == "squad_inclusions":
             clause_lines.append(
-                f"If the Player is included in the matchday squad at least 5 times in Russian Premier League matches during one sporting season, "
+                f"If the Player is included in the matchday squad at least 5 times in {competition_name} matches during one sporting season, "
                 f"the Player shall be granted a monthly incentive payment in the amount of {amount} RUB."
             )
         elif bonus["bonus_category"] == "minutes_750_1500":
             clause_lines.append(
-                f"If the Player records at least 750, but fewer than 1,500, minutes of playing time in Russian Premier League matches during one sporting season, "
+                f"If the Player records at least 750, but fewer than 1,500, minutes of playing time in {competition_name} matches during one sporting season, "
                 f"the base monthly incentive payment shall be increased to {amount} RUB."
             )
         elif bonus["bonus_category"] == "minutes_1500_2100":
             clause_lines.append(
-                f"If the Player records at least 1,500, but fewer than 2,100, minutes of playing time in Russian Premier League matches during one sporting season, "
+                f"If the Player records at least 1,500, but fewer than 2,100, minutes of playing time in {competition_name} matches during one sporting season, "
                 f"the base monthly incentive payment shall be increased to {amount} RUB."
             )
         elif bonus["bonus_category"] == "minutes_2100_plus":
             clause_lines.append(
-                f"If the Player records at least 2,100 minutes of playing time in Russian Premier League matches during one sporting season, "
+                f"If the Player records at least 2,100 minutes of playing time in {competition_name} matches during one sporting season, "
                 f"the base monthly incentive payment shall be increased to {amount} RUB."
             )
         elif bonus["bonus_category"] == "goal_contributions":
@@ -157,24 +158,27 @@ def build_contract_text(start_date: str, end_date: str, bonuses: list[dict]) -> 
     )
 
 
-def fetch_rpl_competition(cursor) -> dict:
+def fetch_selected_competition(cursor, competition_code: str, season: int) -> dict:
     cursor.execute(
         """
         SELECT id, transfermarkt_code, name, country, season
         FROM competitions
         WHERE transfermarkt_code = %s
-        ORDER BY season DESC, id DESC
+          AND season = %s
+        ORDER BY id DESC
         LIMIT 1;
         """,
-        (RPL_COMPETITION_CODE,),
+        (competition_code, season),
     )
     competition = cursor.fetchone()
     if not competition:
-        raise ValueError("Russian Premier League competition not found in competitions table")
+        raise ValueError(
+            f"Competition {competition_code} for season {season} not found in competitions table"
+        )
     return competition
 
 
-def fetch_player_profiles(cursor) -> list[dict]:
+def fetch_player_profiles(cursor, competition_code: str, season: int) -> list[dict]:
     cursor.execute(
         """
         SELECT
@@ -183,10 +187,10 @@ def fetch_player_profiles(cursor) -> list[dict]:
             p.player_name,
             p.position,
             p.market_value_eur,
-            p.club_id,
+            player_clubs.club_id,
             c.club_name,
-            c.competition_id,
-            comp.season,
+            club_competitions.competition_id,
+            club_competitions.season,
             stats.squad_inclusions,
             stats.appearances,
             stats.starts,
@@ -198,19 +202,26 @@ def fetch_player_profiles(cursor) -> list[dict]:
             stats.red_cards,
             stats.ppg
         FROM players p
-        JOIN clubs c ON c.id = p.club_id
-        JOIN competitions comp ON comp.id = c.competition_id
+        JOIN player_clubs ON player_clubs.player_id = p.id
+        JOIN clubs c ON c.id = player_clubs.club_id
+        JOIN club_competitions ON club_competitions.club_id = c.id
+            AND club_competitions.season = player_clubs.season
+        JOIN competitions comp ON comp.id = club_competitions.competition_id
         LEFT JOIN LATERAL (
             SELECT *
             FROM player_season_stats s
             WHERE s.player_id = p.id
+              AND s.club_id = player_clubs.club_id
+              AND s.competition_id = club_competitions.competition_id
+              AND s.season = player_clubs.season
             ORDER BY s.season DESC, s.created_at DESC, s.id DESC
             LIMIT 1
         ) stats ON TRUE
         WHERE comp.transfermarkt_code = %s
-        ORDER BY p.id;
+          AND player_clubs.season = %s
+        ORDER BY p.id, player_clubs.season DESC;
         """,
-        (RPL_COMPETITION_CODE,),
+        (competition_code, season),
     )
     return cursor.fetchall()
 
@@ -353,17 +364,17 @@ def insert_bonus_conditions(cursor, contract_bonus_id: int, conditions: list[tup
     return count
 
 
-def load_league_contract_terms() -> None:
+def load_league_contract_terms(competition_code: str, season: int) -> None:
     print("Connecting to database")
     with get_connection() as connection:
         print("Connected to database")
         with connection.cursor() as cursor:
             # clear_contract_tables(cursor)
             print("Fetching competition")
-            rpl_competition = fetch_rpl_competition(cursor)
-            print(f"Loaded competition {rpl_competition['transfermarkt_code']}")
+            selected_competition = fetch_selected_competition(cursor, competition_code, season)
+            print(f"Loaded competition {selected_competition['transfermarkt_code']} season {selected_competition['season']}")
             print("Fetching player profiles")
-            players = fetch_player_profiles(cursor)
+            players = fetch_player_profiles(cursor, competition_code, season)
             print(f"Loaded {len(players)} player profiles")
 
             contract_count = 0
@@ -374,7 +385,12 @@ def load_league_contract_terms() -> None:
                 base_salary = estimate_base_salary(player)
                 start_date, end_date = contract_period(player)
                 bonuses = build_bonus_specs(player, base_salary)
-                contract_text = build_contract_text(start_date, end_date, bonuses)
+                contract_text = build_contract_text(
+                    start_date,
+                    end_date,
+                    selected_competition["name"],
+                    bonuses,
+                )
                 contract_id = insert_contract(
                     cursor,
                     player=player,
@@ -389,7 +405,7 @@ def load_league_contract_terms() -> None:
                     bonus_id = insert_bonus(
                         cursor,
                         contract_id=contract_id,
-                        competition_id=rpl_competition["id"],
+                        competition_id=selected_competition["id"],
                         display_order=display_order,
                         bonus=bonus,
                     )
@@ -425,7 +441,14 @@ def load_league_contract_terms() -> None:
 
 
 def main():
-    load_league_contract_terms()
+    parser = argparse.ArgumentParser(description="Generate contract terms for a selected competition and season.")
+    add_competition_arguments(parser)
+    args = parser.parse_args()
+    competitions = build_selected_competitions(args.competition, season=args.season)
+    if len(competitions) != 1:
+        raise ValueError("contract_terms accepts exactly one --competition value")
+    selected = competitions[0]
+    load_league_contract_terms(selected["code"], args.season)
 
 
 if __name__ == "__main__":
