@@ -354,17 +354,23 @@ def insert_bonus_conditions(cursor, contract_bonus_id: int, conditions: list[tup
 
 
 def load_league_contract_terms() -> None:
+    print("Connecting to database")
     with get_connection() as connection:
+        print("Connected to database")
         with connection.cursor() as cursor:
-            clear_contract_tables(cursor)
+            # clear_contract_tables(cursor)
+            print("Fetching competition")
             rpl_competition = fetch_rpl_competition(cursor)
+            print(f"Loaded competition {rpl_competition['transfermarkt_code']}")
+            print("Fetching player profiles")
             players = fetch_player_profiles(cursor)
+            print(f"Loaded {len(players)} player profiles")
 
             contract_count = 0
             bonus_count = 0
             condition_count = 0
 
-            for player in players:
+            for index, player in enumerate(players, start=1):
                 base_salary = estimate_base_salary(player)
                 start_date, end_date = contract_period(player)
                 bonuses = build_bonus_specs(player, base_salary)
@@ -405,7 +411,12 @@ def load_league_contract_terms() -> None:
                         conditions=bonus["conditions"],
                     )
 
+                if index % 25 == 0:
+                    print(f"Processed {index}/{len(players)} players")
+
+        print("Committing transaction")
         connection.commit()
+        print("Commit complete")
 
     print(
         f"Generated {contract_count} contracts, {bonus_count} seasonal bonuses, "
